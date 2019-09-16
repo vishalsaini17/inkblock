@@ -1,0 +1,700 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+
+/* @font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url("../fonts/HurmeGeometricSansNo.4/HurmeGeometricSans4-Thin.otf");
+    font-weight: 200;
+} */
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url("../fonts/HurmeGeometricSansNo.4/HurmeGeometricSans4-Light.otf");
+    font-weight: 300;
+}
+
+/* @font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url("../fonts/HurmeGeometricSansNo.4/HurmeGeometricSans4.otf");
+    font-weight: 400;
+} */
+@font-face {
+    font-family: 'HurmeGeometricSans4';
+    src: url("../fonts/HurmeGeometricSansNo.4/HurmeGeometricSans4-Bold.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans3';
+    src: url("../fonts/HurmeGeometricSansNo.3/HurmeGeometricSans3-Light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans3';
+    src: url("../fonts/HurmeGeometricSansNo.3/HurmeGeometricSans3.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans3';
+    src: url("../fonts/HurmeGeometricSansNo.3/HurmeGeometricSans3-SemiBold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans3';
+    src: url("../fonts/HurmeGeometricSansNo.3/HurmeGeometricSans3-Bold.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans3';
+    src: url("../fonts/HurmeGeometricSansNo.3/HurmeGeometricSans3-Black.otf");
+    font-weight: 900;
+}
+
+
+@font-face {
+    font-family: 'HurmeGeometricSans2';
+    src: url("../fonts/HurmeGeometricSansNo.2/HurmeGeometricSans2-SemiBold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans1';
+    src: url("../fonts/HurmeGeometricSansNo.1//HurmeGeometricSans1-Light.otf");
+    font-weight: 300;
+}
+
+.HurmeGeometricSans1 {
+    font-family: 'HurmeGeometricSans1', sans-serif;
+}
+
+.HurmeGeometricSans2 {
+    font-family: 'HurmeGeometricSans2', sans-serif;
+}
+
+.HurmeGeometricSans3 {
+    font-family: 'HurmeGeometricSans3', sans-serif;
+}
+
+.HurmeGeometricSans4 {
+    font-family: 'HurmeGeometricSans4', sans-serif;
+}
+
+body {
+    color: #282828;
+}
+
+h1 {
+    font-family: 'HurmeGeometricSans4';
+    font-size: 5.2vw;
+    font-weight: 300;
+    line-height: 1.07;
+    text-align: left;
+    color: #282828;
+}
+
+h1 strong {
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "HurmeGeometricSans2";
+    font-size: 3.7vw;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #006ff9;
+}
+
+h3 {
+    font-family: "HurmeGeometricSans3";
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 1.18;
+    margin-bottom: 0.55em;
+}
+
+h5 {
+    font-family: "HurmeGeometricSans3";
+    font-size: 1.76vw;
+    font-weight: bold;
+    line-height: 0.88;
+    color: #006ff9;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.btn {
+    font-family: "HurmeGeometricSans3";
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 5px 20px;
+    min-width: 80px;
+    letter-spacing: 0.25px;
+}
+
+.btn-round {
+    border-radius: 25px;
+}
+
+.btn-primary {
+    box-shadow: 0 4px 6px 0 rgba(0, 111, 249, 0.2);
+    background-color: #006ff9;
+}
+
+section {
+    /* padding: 70px 30px; */
+    padding-top: 5.1vw;
+    padding-bottom: 5.1vw;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.indicator-true section {
+    /* padding-left: 96.7px;
+    padding-right: 96.7px; */
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+}
+
+section>* {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/* navbar */
+.main-navbar {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-navbar.hide-navbar {
+    transform: translateY(-100%);
+    transition: all 0.8s ease;
+}
+
+.main-navbar.shadow-navbar {
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav-height {
+    height: 111.6px;
+}
+
+.main-navbar .nav a {
+    font-family: "HurmeGeometricSans3";
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #282828;
+    font-size: 11px;
+    padding: .5rem 26px;
+}
+
+.main-navbar .nav li.active a {
+    color: #006ff9;
+}
+
+a.nav-link::after {
+    content: attr(data-name);
+    display: block;
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: 0.4s;
+}
+
+
+a.nav-link:hover::after {
+    opacity: 1;
+    transform: translate(0%, -40%);
+}
+
+a.nav-link::before {
+    content: attr(data-name);
+    display: block;
+    transform: translate(0%, 60%);
+    transition: 0.4s;
+}
+
+
+a.nav-link:hover::before {
+    opacity: 0;
+    transform: translate(0%, -60%);
+}
+
+/* page indicator */
+.page-indicator {
+    text-align: center;
+    position: fixed;
+    top: 30vh;
+    left: 55px;
+    transform: translateX(-50%);
+}
+
+.page-indicator .indicator {
+    width: 1.1px;
+    height: 80.5px;
+    background-color: #d8d8d8;
+    margin: auto;
+    position: relative;
+}
+
+.page-indicator .indicator-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #231f20;
+}
+
+.page-indicator i {
+    font-size: 20px;
+    color: #006ff9;
+    font-size: 29px;
+    line-height: 1;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+
+/* hello section */
+.section-hello {
+    min-height: calc(100vh - 110px);
+    padding-top: 25px;
+}
+
+.text-hello {
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 15.5vw;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -1.16vw;
+    color: #f5f5f5;
+    line-height: 1.1;
+    padding-top: 2%;
+}
+
+.text-hello::after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 1rem solid;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+/* who we are */
+
+.who-we-are .btn {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #006ff9;
+    margin-right: 15px;
+}
+
+.who-we-are .btn-outline-light {
+    color: #fff;
+}
+
+.who-we-are .btn-outline-light:hover {
+    color: #006ff9;
+}
+
+.wwa-right {
+    padding: 5% 60px;
+    font-family: 'HurmeGeometricSans1';
+    font-weight: 300;
+}
+
+.wwa-right p {
+    margin-bottom: 6%;
+    font-size: 1.03vw;
+}
+.who-we-are .blue-logo{
+    max-width: 15.1vw;
+}
+/* what we do */
+.wwd-section {
+    color: #39393f;
+    overflow: hidden;
+    /* padding-bottom: 160px; */
+    /* padding-top: 115px; */
+    padding-top: 8.4vw;
+    padding-bottom: 11.8vw;
+}
+
+.wwd-card {
+    max-width: 284.1px;
+    min-height: 280.2px;
+    margin: 0 auto;
+    border-radius: 11.9px;
+    box-shadow: 0 10px 30px 0 rgba(0, 99, 255, 0.11);
+    background-color: #ffffff;
+    padding: 30px 36px;
+    position: relative;
+    font-family: "HurmeGeometricSans4";
+    /* font-size: 41px; */
+    font-size: 3vw;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #39393f;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.wwd-card .text {
+    position: relative;
+    z-index: 3;
+}
+
+.wwd-card:hover .text {
+    color: #fff;
+}
+
+.wwd-card .shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 11.9px;
+    overflow: hidden;
+}
+
+.wwd-card .shape::before {
+    content: '';
+    /* width: 6.3px; */
+    width: 0.44vw;
+    object-fit: contain;
+    background-color: #0a8eed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.2s ease;
+}
+
+.wwd-card:hover .shape::before {
+    width: 100%;
+}
+
+.wwd-card .shape::after {
+    content: '';
+    position: absolute;
+    background-image: url('../img/wave-big.svg'), url('../img/wave-small.svg');
+    background-position: right bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    right: 0;
+    bottom: 0;
+    width: 262.7px;
+    height: 188.5px;
+    transform: translate(100%, 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.wwd-card:hover .shape::after {
+    transform: translate(0%, 0%);
+    transition-delay: 0.01s;
+}
+
+.wwd-section .container-fluid {
+    padding: 0 34px;
+    /* max-width: 1060px; */
+    max-width: 100%;
+}
+
+.wwd-row {
+    margin: 0 -34px;
+}
+
+.wwd-row .wwd-card{
+    padding-top: 2.2vw;
+    padding-left: 2.6vw;   
+    padding-bottom: 2.2vw;
+    padding-right: 2.6vw;
+    height: 20.5vw;
+    width: 23vw;
+}
+
+.has-circle::before,
+.has-semi-circle::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    display: block;
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: 5em solid #f5f5f5;
+    width: 5em;
+    height: 5em;
+    font-size: 13px;
+}
+
+.has-circle::before {
+    top: 100%;
+    right: 100%;
+    transform: translate(50%, -50%);
+}
+
+.has-semi-circle::before {
+    bottom: 100%;
+    left: 100%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    border-right-color: transparent;
+}
+
+/* work section */
+.work-section {
+    background-color: #0036d4;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.work-wrapper {
+    position: relative;
+}
+
+.work-image {
+    position: absolute;
+    right: 0;
+    object-fit: contain;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+    width: 50vw;
+    padding-top: 40%;
+}
+
+.work-list {
+    z-index: 1;
+    color: #ffffff;
+    font-family: "HurmeGeometricSans3";
+    font-size: 3.52vw;
+    line-height: 1;
+}
+
+.work-list li {
+    opacity: 0.3;
+    position: relative;
+    margin-bottom: 10px;
+    left: 0;
+    transform: scale(0.9);
+    font-weight: 400;
+    transition: transform 0.42s ease, left 0.42s ease-out, font-weight 0.2s ease, opacity 0.3s  ease-out;
+    transform-origin: center left;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.work-list li:hover {
+    opacity: 1;
+    left: 25px;
+    transform: scale(1);
+    font-weight: 600;
+}
+
+.work-list small {
+    display: block;
+    font-size: 1.538vw;
+    font-weight: 300;
+    line-height: 1.48;
+}
+
+/* contact */
+.contact-section {
+    min-height: 720px;
+    font-family: "HurmeGeometricSans3";
+}
+
+.say-hi {
+    /* font-size: 40px; */
+    font-size: 2.9vw;
+    font-weight: 900;
+    line-height: 1.25;
+    color: #006ff9;
+}
+
+.contact-subtitle {
+    /* font-size: 21px; */
+    font-size: 1.54vw;
+    font-weight: 300;
+    color: #282828;
+}
+
+.contact-form .form-control {
+    background-color: #f5f5f5;
+    border-radius: 4.5px;
+    color: #39393f;
+    font-size: 13px;
+    font-weight: 300;
+    border: none;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(191, 191, 191, 0.25);
+}
+
+.contact-form .form-group>textarea {
+    height: auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 0.9rem;
+}
+
+.contact-img img{
+    width: 30.5vw;
+}
+
+/* footer */
+.main-footer {
+    background-color: #1f2024;
+    font-family: "HurmeGeometricSans3";
+    font-size: 1.2vw;
+    font-weight: 300;
+    line-height: 2;
+    color: #ffffff;
+    padding: 0 10vw;
+}
+.main-footer .text-muted{
+    color: #bbb !important;
+}
+.main-footer .height {
+    min-height: 23.5vw;
+}
+
+/* about babber */
+.banner-section {
+    min-height: 38.4vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-bottom: 10px;
+}
+
+.text-banner {
+    font-family: "HurmeGeometricSans3";
+    font-size: 9.5vw;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+/* about info */
+.about-info {
+    font-family: 'HurmeGeometricSans3';
+    font-size: 1.45vw;
+    font-weight: 300;
+    line-height: 1.48;
+    padding-bottom: 110px;
+}
+
+.about-info b {
+    font-weight: 600;
+}
+
+.heading-black {
+    font-family: "HurmeGeometricSans3";
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.29;
+    position: relative;
+}
+
+.heading-black::before {
+    content: '';
+    display: block;
+    border-top: 1px solid;
+    max-width: 230px;
+    margin-bottom: 2px;
+}
+
+.main-footer img{
+    width: 8.3vw;
+}
+
+/* project details */
+.project-heading {
+    font-family: "HurmeGeometricSans3";
+    color: #006ff9;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 4.03vw;
+    padding: 0 6.3vw;
+}
+
+.project-heading small {
+    display: block;
+    color: #282828;
+    font-weight: 400;
+    line-height: 1.21;
+    font-size: 2.05vw;
+}
+.project-heading small::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 1px solid;
+    width: 4.76vw;
+    margin-right: 12.5px;
+}
+
+/* media */
+
+@media(max-width: 768px){
+    .wwd-row .wwd-card{
+        min-height: 150px;
+        min-width: 180px;
+    }
+}
+@media(min-width: 768px) {
+    .col-md-about-left {
+        max-width: 24vw;
+    }
+}
+@media(min-width: 1650px){
+    .page-indicator{
+        top: 27vh;
+    }
+    .wwd-row .wwd-card{
+        min-width: 400px;
+        min-height: 393px;
+    }
+}
+
+@media(min-width: 1367px){
+
+}

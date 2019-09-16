@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <title>InkBlock</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="indicator-true">
+
+  <div class="page-indicator">
+    <div class="indicator"> <span class="indicator-progress"></span> </div>
+    <i class="fas fa-sort-down"></i>
+  </div>
+
+  <div class="nav-height"></div>
+  <nav class="main-navbar nav-height navbar">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand px-2 mx-0"><img src="assets/img/logo-nav.svg" alt="inkBlock"></a>
+      <div class="col px-0">
+        <ul class="nav justify-content-end">
+          <li class="active"><a href="index.html" class="nav-link" data-name="Home"></a></li>
+          <li><a href="index.html#work" onclick="smoothScroll(1750.265625)" class="nav-link" data-name="WORK"></a></li>
+          <li><a href="about.html" class="nav-link" data-name="ABOUT"></a></li>
+          <li><a href="index.html#contact" class="nav-link" data-name="CONTACT"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section-hello">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9 pb-5 mt-5">
+          <h1>
+            Let’s dive into <br>
+            the world of <strong class="text-primary">creativity.</strong>
+          </h1>
+        </div>
+        <div class="col-12 text-right">
+          <div class="text-hello">Hello</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-we-are">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-md py-4 pl-5">
+          <img src="assets/img/logo-blue-big.svg" alt="inkBlock" class="blue-logo ml-5">
+        </div>
+        <div class="col-12 col-md px-0">
+          <div class="col-12 wwa-right bg-primary text-white d-flex align-items-center">
+            <div class="col-12 px-0">
+              <h3>Who are we?</h3>
+              <p>Ink block studio is an India based design agency with a main focus on making your brand identity stand
+                out in this competetive world.</p>
+              <button class="btn btn-round btn-outline-light">Read more</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wwd-section">
+    <div class="container-fluid">
+      <h3>What we do?</h3>
+      <div class="row wwd-row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4  mt-5 mt-lg-4">
+          <div class="wwd-card has-circle">
+            <div class="text">UI/UX Design</div>
+            <div class="shape"></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4  mt-5 mt-lg-4">
+          <div class="wwd-card">
+            <div class="text">Brand Identity</div>
+            <div class="shape"></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4  mt-5 mt-lg-4">
+          <div class="wwd-card has-semi-circle">
+            <div class="text">Digital Media</div>
+            <div class="shape"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-section work"  >
+    <div class="container-fluid">
+      <div class="work-wrapper">
+        <ul class="list-unstyled work-list">
+          <li>iWheels <small>(UX/UI, App Design)</small></li>
+          <li>Global Connectors <small>(UX/UI, Web Design)</small></li>
+          <li>Mirah Belle Naturals <small>(Packging)</small></li>
+          <li>CyberSun Consulting <small>(Logo)</small></li>
+          <li>Transform <small>(Booklet)</small></li>
+        </ul>
+
+        <div class="work-image">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section d-flex align-items-center">
+    <div class="container-fluid w-100">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5">
+          <h4 class="say-hi">Say Hi!</h4>
+          <p class="contact-subtitle">We are always excited to hear a new idea!</p>
+
+          <form action="#" class="col-12 col-lg-10 px-0 pt-4">
+            <div class="form-row contact-form">
+              <div class="col-12 form-group">
+                <input type="text" class="form-control" placeholder="Your name">
+              </div>
+              <div class="col-12 col-md-6 form-group">
+                <input type="text" class="form-control" placeholder="Your email">
+              </div>
+              <div class="col-12 col-md-6 form-group">
+                <input type="text" class="form-control" placeholder="Your phone">
+              </div>
+              <div class="col-12 form-group">
+                <input type="text" class="form-control" placeholder="Your subject">
+              </div>
+              <div class="col-12 form-group">
+                <textarea class="form-control" rows="6" cols="30" placeholder=" Tell us somthing"></textarea>
+              </div>
+              <div class="col-12 form-group text-right">
+                <button class="btn btn-primary btn-round">SEND</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-md text-right contact-img">
+          <img src="assets/img/contact-illustration.svg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container-fluid">
+      <div class="row align-items-center height">
+        <div class="col">
+          <img src="assets/img/logo-dark.svg" alt="inkBlock">
+        </div>
+        <div class="col text-right">
+          <h5>Contact</h5>
+          <div>inkblockstudio@gmail.com</div>
+          <div>(+91) 888 2424 955 | 798 2015 334 | 964 3884 399</div>
+          <div>Gurugram, Haryana, India - 122001</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
