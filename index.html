@@ -31,9 +31,9 @@
       <div class="col px-0">
         <ul class="nav justify-content-end">
           <li class="active"><a href="index.html" class="nav-link" data-name="Home"></a></li>
-          <li><a href="index.html#work" onclick="smoothScroll(1750.265625)" class="nav-link" data-name="WORK"></a></li>
+          <li><a href="index.html#work" onclick="smoothScroll(offset_top_work)" class="nav-link" data-name="WORK"></a></li>
           <li><a href="about.html" class="nav-link" data-name="ABOUT"></a></li>
-          <li><a href="index.html#contact" class="nav-link" data-name="CONTACT"></a></li>
+          <li><a href="index.html#contact" onclick="smoothScroll(offset_top_contact)" class="nav-link" data-name="CONTACT"></a></li>
         </ul>
       </div>
     </div>
@@ -59,7 +59,7 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-12 col-md py-4 pl-5">
-          <img src="assets/img/logo-blue-big.svg" alt="inkBlock" class="blue-logo ml-5">
+          <img src="assets/img/logo-blue-big.svg" alt="inkBlock" class="blue-logo">
         </div>
         <div class="col-12 col-md px-0">
           <div class="col-12 wwa-right bg-primary text-white d-flex align-items-center">
@@ -80,7 +80,7 @@
     <div class="container-fluid">
       <h3>What we do?</h3>
       <div class="row wwd-row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4  mt-5 mt-lg-4">
+        <div class="col-12 col-md-6 col-lg-4  mt-5 mt-lg-4 pl-0">
           <div class="wwd-card has-circle">
             <div class="text">UI/UX Design</div>
             <div class="shape"></div>
@@ -102,15 +102,15 @@
     </div>
   </section>
 
-  <section class="work-section work"  >
+  <section class="work-section" id="work" >
     <div class="container-fluid">
       <div class="work-wrapper">
         <ul class="list-unstyled work-list">
-          <li>iWheels <small>(UX/UI, App Design)</small></li>
-          <li>Global Connectors <small>(UX/UI, Web Design)</small></li>
-          <li>Mirah Belle Naturals <small>(Packging)</small></li>
-          <li>CyberSun Consulting <small>(Logo)</small></li>
-          <li>Transform <small>(Booklet)</small></li>
+          <li class="project-img-1"><a href="iwheels.html">iWheels <small>(UX/UI, App Design)</small></a></li>
+          <li class="project-img-2"><a href="global-connectors.html">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
+          <li class="project-img-3"><a href="Mirah-Belle.html">Mirah Belle Naturals <small>(Packging)</small></a></li>
+          <li class="project-img-4"><a href="">CyberSun Consulting <small>(Logo)</small></a></li>
+          <li class="project-img-5"><a href="">Transform <small>(Booklet)</small></a></li>
         </ul>
 
         <div class="work-image">
@@ -120,7 +120,7 @@
     </div>
   </section>
 
-  <section class="contact-section d-flex align-items-center">
+  <section class="contact-section d-flex align-items-center" id="contact">
     <div class="container-fluid w-100">
       <div class="row align-items-center">
         <div class="col-12 col-md-5">
@@ -161,12 +161,12 @@
     <div class="container-fluid">
       <div class="row align-items-center height">
         <div class="col">
-          <img src="assets/img/logo-dark.svg" alt="inkBlock">
+          <img src="assets/img/logo-dark.svg" alt="inkBlock" class="footer-logo">
         </div>
-        <div class="col text-right">
+        <div class="col text-right footer-text">
           <h5>Contact</h5>
           <div>inkblockstudio@gmail.com</div>
-          <div>(+91) 888 2424 955 | 798 2015 334 | 964 3884 399</div>
+          <div class="text-white">(+91) 888 2424 955 | 798 2015 334 | 964 3884 399</div>
           <div>Gurugram, Haryana, India - 122001</div>
         </div>
       </div>
