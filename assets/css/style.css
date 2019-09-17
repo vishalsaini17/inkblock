@@ -657,8 +657,14 @@ a.nav-link:hover::before {
     min-height: 38.4vw;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    /* background-position: top center; */
     padding-bottom: 10px;
+    /* background-image: url('download.jpg'); */
+    background-attachment: fixed; 
+    background-position-y: 0;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .text-banner {

@@ -85,39 +85,10 @@ $(document).ready(function () {
   })
   
 // parallel-x 
-
-// $('.banner-section').imageScroll({
-//   // The image to show.
-//   image: null, 
-//   // The data attribute name for images.
-//   // Uses the value of this attribute to load the image.
-//   imageAttribute: 'image', 
-//   // Class added to image holder(s). 
-//   holderClass: 'imageHolder', 
-//   // The element to which the parallax image(s) will be attached to
-//   container: $('body'), 
-//   // The window object which listens to scroll and resize events
-//   windowObject: $(window),
-//   // The speed of the parallax effect.
-//   speed: 0.2, 
-//   // How many percent of the screen each image should cover.
-//   coverRatio: 0.75, 
-//   // The minimum height of the image in pixels.
-//   holderMinHeight: 200, 
-//   // The maximum height of the image in pixels
-//   holderMaxHeight: null,
-//   // Extra height added to the image. 
-//   extraHeight: 0, 
-//   // The original width of the image.
-//   mediaWidth: 1600, 
-//   // The original height of the image.
-//   mediaHeight: 900, 
-//   // Whether or not you want the parallax effect.
-//   parallax: true, 
-//   // Presents a mobile/tablet friendly version, 
-//   // no parallax effect and smaller images 
-//   // (should be used with a mobile/tablet optimized image)
-//   touch: false
-//   });
+$(window).on("scroll", function(){
+  var scrollVal = $(window).scrollTop();
+  var x = -(scrollVal - scrollVal/2) + 'px';
+  $('.banner-section').css({'background-position-y':x});
+})
 
 });
