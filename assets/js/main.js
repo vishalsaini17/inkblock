@@ -60,28 +60,33 @@ $(document).ready(function () {
 
 
   $('.project-img-1').hover(function(){
-    $('.work-image').toggleClass('hover-image-p1');
-    $('.work-image').toggleClass('hover-project-image');
+    $('.work-image>div').toggleClass('hover-image-p1');
+    $('.work-image>div').toggleClass('hover-project-image');
+    $('.work-image').toggleClass('work-hover');
   })
 
   $('.project-img-2').hover(function(){
-    $('.work-image').toggleClass('hover-image-p2');
-    $('.work-image').toggleClass('hover-project-image');
+    $('.work-image>div').toggleClass('hover-image-p2');
+    $('.work-image>div').toggleClass('hover-project-image');
+    $('.work-image').toggleClass('work-hover');
   })
 
   $('.project-img-3').hover(function(){
-    $('.work-image').toggleClass('hover-image-p3');
-    $('.work-image').toggleClass('hover-project-image');
+    $('.work-image>div').toggleClass('hover-image-p3');
+    $('.work-image>div').toggleClass('hover-project-image');
+    $('.work-image').toggleClass('work-hover');
   })
 
   $('.project-img-4').hover(function(){
-    $('.work-image').toggleClass('hover-image-p4');
-    $('.work-image').toggleClass('hover-project-image');
+    $('.work-image>div').toggleClass('hover-image-p4');
+    $('.work-image>div').toggleClass('hover-project-image');
+    $('.work-image').toggleClass('work-hover');
   })
 
   $('.project-img-5').hover(function(){
-    $('.work-image').toggleClass('hover-image-p5');
-    $('.work-image').toggleClass('hover-project-image');
+    $('.work-image>div').toggleClass('hover-image-p5');
+    $('.work-image>div').toggleClass('hover-project-image');
+    $('.work-image').toggleClass('work-hover');
   })
   
 // parallel-x 
