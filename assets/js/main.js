@@ -34,11 +34,12 @@ $(window).on("scroll", function(){
   }
 })
 
+
 $(document).ready(function () {
   var position = $(window).scrollTop();
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-
+    // var navHeight=$('.nav-height').outerHeight(true);
     // var allow = (scroll >= 111)? true : false;
 
     if ((scroll > position)) {
@@ -62,6 +63,7 @@ $(document).ready(function () {
   $('.project-img-1').hover(function(){
     $('.work-image>div').toggleClass('hover-image-p1');
     $('.work-image>div').toggleClass('hover-project-image');
+    $('.main-navbar').addClass(' hide-navbar');   
     $('.work-image').toggleClass('work-hover');
   })
 
@@ -69,31 +71,41 @@ $(document).ready(function () {
     $('.work-image>div').toggleClass('hover-image-p2');
     $('.work-image>div').toggleClass('hover-project-image');
     $('.work-image').toggleClass('work-hover');
+    $('.main-navbar').addClass(' hide-navbar'); 
   })
 
   $('.project-img-3').hover(function(){
     $('.work-image>div').toggleClass('hover-image-p3');
     $('.work-image>div').toggleClass('hover-project-image');
     $('.work-image').toggleClass('work-hover');
+    $('.main-navbar').addClass(' hide-navbar'); 
   })
 
   $('.project-img-4').hover(function(){
     $('.work-image>div').toggleClass('hover-image-p4');
     $('.work-image>div').toggleClass('hover-project-image');
     $('.work-image').toggleClass('work-hover');
+    $('.main-navbar').addClass(' hide-navbar'); 
   })
 
   $('.project-img-5').hover(function(){
     $('.work-image>div').toggleClass('hover-image-p5');
     $('.work-image>div').toggleClass('hover-project-image');
     $('.work-image').toggleClass('work-hover');
+    $('.main-navbar').addClass(' hide-navbar'); 
   })
   
 // parallel-x 
 $(window).on("scroll", function(){
   var scrollVal = $(window).scrollTop();
   var x = -(scrollVal - scrollVal/2) + 'px';
-  $('.banner-section').css({'background-position-y':x});
+  $('.banner-section').css({'background-position-y': 'calc(80px + '+ x +')'});
 })
+
+
+
+// var indicatorval=$('.section-hello h1').offset().top;
+// $('.page-indicator').css({'top':indicatorval+'px'});
+
 
 });
