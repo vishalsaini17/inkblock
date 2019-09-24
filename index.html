@@ -15,13 +15,15 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script src="assets/js/jquery.visible.min.js"></script>
 </head>
 
 <body class="indicator-true">
 
   <div class="page-indicator">
     <div class="indicator"> <span class="indicator-progress"></span> </div>
-    <i class="fas fa-sort-down"></i>
+    <i class="fas fa-sort-down" id="indicate-next"></i>
   </div>
 
   <div class="nav-height"></div>
@@ -31,31 +33,31 @@
       <div class="col px-0">
         <ul class="nav justify-content-end">
           <li class="active"><a href="index.html" class="nav-link" data-name="Home"></a></li>
-          <li><a href="index.html#work" onclick="smoothScroll(offset_top_work)" class="nav-link" data-name="WORK"></a></li>
+          <li ><a href="index.html#work" onclick="smoothScroll(offset_top_work)" class="nav-link" data-name="WORK"></a></li>
           <li><a href="about.html" class="nav-link" data-name="ABOUT"></a></li>
-          <li><a href="index.html#contact" onclick="smoothScroll(offset_top_contact)" class="nav-link" data-name="CONTACT"></a></li>
+          <li ><a href="index.html#contact" onclick="smoothScroll(offset_top_contact)" class="nav-link" data-name="CONTACT"></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="section-hello">
+  <section class="section-hello zero">
     <div class="container-fluid">
       <div class="row creativity">
         <div class="col-md-9 mt-5">
-          <h1>
+          <h1 id="creative-heading">
             Let’s dive into <br>
             the world of <strong class="text-primary">creativity.</strong>
           </h1>
         </div>
         <div class="col-12 text-right">
-          <div class="text-hello">Hello</div>
+          <div class="text-hello"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="who-we-are">
+  <section class="who-we-are one">
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-12 col-md py-4 pl-5">
@@ -76,7 +78,7 @@
     </div>
   </section>
 
-  <section class="wwd-section">
+  <section class="wwd-section two">
     <div class="container-fluid">
       <h3>What we do?</h3>
       <div class="row wwd-row justify-content-center">
@@ -102,7 +104,7 @@
     </div>
   </section>
 
-  <section class="work-section" id="work" >
+  <section class="work-section three" id="work">
     <div class="container-fluid">
       <div class="work-wrapper d-flex">
         <ul class="list-unstyled work-list">
@@ -113,16 +115,39 @@
           <li class="project-img-5"><a href="">Transform <small>(Booklet)</small></a></li>
         </ul>
 
-        <div class="work-image d-flex">
-          <div style="height: 100%" class="work-image-hover">
+        <div class="d-flex">
+          <div class="work-image work-image-1">
+            <div class="work-image-hover-1 work-image-hover">
 
+            </div>
+          </div>
+          <div class="work-image work-image-2">
+            <div class="work-image-hover-2 work-image-hover">
+
+            </div>
+          </div>
+          <div class="work-image work-image-3">
+            <div class="work-image-hover-3 work-image-hover">
+
+            </div>
+          </div>
+          <div class="work-image work-image-4">
+            <div class="work-image-hover-4 work-image-hover">
+
+            </div>
+          </div>
+          <div class="work-image work-image-5">
+            <div class="work-image-hover-5 work-image-hover">
+
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <section class="contact-section d-flex align-items-center" id="contact">
+  <section class="contact-section d-flex align-items-center four" id="contact">
     <div class="container-fluid w-100">
       <div class="row creativity align-items-center">
         <div class="col-12 col-md-5">
@@ -168,8 +193,8 @@
         <div class="col text-right footer-text">
           <h5>Contact</h5>
           <div>inkblockstudio@gmail.com</div>
-          <div class="text-white">(+91) 888 2424 955 | 798 2015 334 | 964 3884 399</div>
-          <div>Gurugram, Haryana, India - 122001</div>
+          <div class="text-muted">(+91) 888 2424 955 | 798 2015 334 | 964 3884 399</div>
+          <div class="text-muted">Gurugram, Haryana, India - 122001</div>
         </div>
       </div>
     </div>
