@@ -592,7 +592,7 @@ a.nav-link:hover::before {
     position: absolute;
     right: 0;
     object-fit: contain;
-    top: 200%;
+    top: 50%;
     width: 50vw;
     height: 33.1vw;
 
@@ -603,7 +603,7 @@ a.nav-link:hover::before {
     align-items: center;
     justify-content: center;
     opacity: .8;
-    transition: top 0ms .25s;
+    transition: all 0ms .25s;
 }
 
 .work-item__image.is-active{
