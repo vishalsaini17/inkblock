@@ -291,6 +291,9 @@ a.nav-link:hover::before {
     /* left: 55px; */
     /* transform: translateX(125%); */
 }
+.page-moving{
+    pointer-events: none;
+}
 
 .page-indicator .indicator {
     width: 1px;
@@ -315,6 +318,7 @@ a.nav-link:hover::before {
     line-height: 1;
     opacity: 0.8;
     margin-top: 1.713vw;
+    cursor: pointer;
 }
 
 /* hello section */

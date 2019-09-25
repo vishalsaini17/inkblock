@@ -4,18 +4,10 @@ function smoothScroll(offsetVal = 0) {
   }, 800);
 }
 
-// $(window).on('hashchange', function(){
-//   // Your Code goes here
-//   var hash = location.hash.replace( /^#/, '' );
-
-
-
-//  });
 if ($('#work').length && $('#contact').length) {
   var offset_top_work = $('#work').offset().top;
   var offset_top_contact = $('#contact').offset().top;
 }
-
 
 
 function amountscrolled() {
@@ -56,8 +48,6 @@ $(document).ready(function () {
       var scrollHeight = $(document).height();
       // var scrollPosition = $(window).height() + $(window).scrollTop();
       // var scrollPosition = scrollHeight - scroll;
-
-
     }
 
     position = scroll;
@@ -87,11 +77,6 @@ $(document).ready(function () {
     //   }, 2000);
     // }
   });
-
-
-
-  // setTimeout(function () {
-  // }, 2000);
 
 
   $('.project-img-1').hover(function () {
@@ -136,11 +121,6 @@ $(document).ready(function () {
     $('.banner-section').css({ 'background-position-y': 'calc(80px + ' + x + ')' });
   })
 
-
-
-  // var indicatorval=$('.section-hello h1').offset().top;
-  // $('.page-indicator').css({'top':indicatorval+'px'});
-
   // indicator offset
   indicatorOffset = $("#creative-heading").offset().top;
   $('.page-indicator').css({ "top": indicatorOffset + 'px', "display": "block" });
@@ -150,69 +130,6 @@ $(document).ready(function () {
     indicatorOffset = $("#creative-heading").offset().top;
     $('.page-indicator').css({ "top": indicatorOffset + 'px', "display": "block" });
   });
-
-
-  // indicator button
-  // $.fn.scrollView = function () {
-  //   return this.each(function () {
-  //     $('html, body').animate({
-  //       scrollTop: $(this).offset().top
-  //     }, 1000);
-  //   });
-  // }
-
-
-  // if ($('.four').visible(true)) {
-  //   // The element is visible, do something
-  //   $('.one').scrollView();
-  // }
-
-  // $('#indicate-next').click(function (event) {
-  //   // $('#four').scrollView();
-  //   if ($('.zero').visible(true)) {
-  //     // The element is visible, do something
-  //     $('.one').scrollView();
-  //   } else {
-  //     // The element is NOT visible, do something else
-  //   }
-  // })
-
-  
-  // $('#indicate-next').click(function (event) {
-  //   // $('#four').scrollView();
-  //   if ($('.one').visible(true)) {
-  //     // The element is visible, do something
-  //     $('.two').scrollView();
-  //   } else {
-  //     // The element is NOT visible, do something else
-  //   }
-  // })
-
-  
-  
-  // $('#indicate-next').click(function (event) {
-  //   // $('#four').scrollView();
-  //   if ($('.two').visible(true)) {
-  //     // The element is visible, do something
-  //     $('.three').scrollView();
-  //   } else {
-  //     // The element is NOT visible, do something else
-  //   }
-  // })
-
-  
-  // $('#indicate-next').click(function (event) {
-  //   // $('#four').scrollView();
-  //   if ($('.three').visible(true)) {
-  //     // The element is visible, do something
-  //     $('.four').scrollView();
-  //   } else {
-  //     // The element is NOT visible, do something else
-  //   }
-  // })
-
-
-
 
 
   // hello animation
@@ -261,10 +178,36 @@ $(document).ready(function () {
 
   });
 
-
-
   // indicator bar 
 
+  $('section').each(function (index) {
+    $(this).attr('data-index', index);
+  });
 
+  $.fn.isInHalfViewport = function () {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
 
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height()/2;
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+
+  $(window).on('resize scroll', function () {
+    $('section').each(function () {
+      if ($(this).isInHalfViewport()) {
+        $('#indicate-next').attr('current-index', $(this).data('index'))
+      }
+    });
+  });
+
+  $('#indicate-next').click(function () {
+    $('.page-indicator').addClass('page-moving');
+    var sectionIndex = $(this).attr('current-index');
+    smoothScroll($('section[data-index="' + sectionIndex + '"]').next().offset().top);
+    setTimeout(() => {
+      $('.page-indicator').removeClass('page-moving');
+    }, 800);
+  });
 });
