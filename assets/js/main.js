@@ -211,3 +211,19 @@ $(document).ready(function () {
     }, 800);
   });
 });
+
+// animation
+
+$('.work-item__image').each(function(i){
+  $(this).addClass('work-imgae-'+i);
+});
+
+$(document).on('mouseenter', '.work-list li', function(e){
+  var myindex =  $(this).index();
+  $('.work-imgae-'+myindex).addClass('is-active');
+});
+
+$(document).on('mouseleave', '.work-list li', function(e){
+  var myindex =  $(this).index();
+  $('.work-imgae-'+myindex).removeClass('is-active');
+});
