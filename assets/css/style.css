@@ -697,6 +697,11 @@ a.nav-link:hover::before {
 
 /* footer */
 .main-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
     background-color: #1f2024;
     font-family: "HurmeGeometricSans3";
     font-size: 1vw;
@@ -834,6 +839,31 @@ section.project-detail{
     /* margin-bottom: 2.08vw; */
     font-size: 1.76vw;
 }
+
+/* mouse-move */
+
+.mouse-move{
+    pointer-events: none;
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform-origin: left;
+    transform:translate(-2px,-7px) rotate(45deg) ;
+    -moz-transform:translate(-2px,-7px) rotate(45deg) ;
+    -ms-transform:translate(-2px,-7px) rotate(45deg) ;
+    -o-transform:translate(-2px,-7px) rotate(45deg) ;
+    -webkit-transform:translate(-2px,-7px) rotate(45deg) ;
+    /* box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+/* body-wrapper */
+
+.body-wrapper{
+    background-color: #fff;
+    z-index: 1;
+}
+
 
 /* media */
 
