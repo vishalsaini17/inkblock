@@ -97,51 +97,25 @@ $(document).ready(function () {
 
 
   // hello animation
-  $(".text-hello").typed({
+    var animated_string = ["Namaste", "Hello", "Holla", "Ni Hao", "Hallo"];
+    var i = 0;
+    var animateLength = animated_string.length;
 
-    strings: ["Namaste", "Hello", "Holla", "Ni Hao", "Hallo"],
-    stringsElement: null,
+  (function loop() {
+    // x.innerHTML = s[i];
+    document.getElementById('hello-aniamte').innerHTML =animated_string[i];
+    if (++i < animateLength) {
+      setTimeout(loop, 1000);  // call myself in 3 seconds time if required
+      
+    }
+    if(i==animateLength-1){
+      i=0;
+    }
+  })();  
 
-    // typing speed
-    typeSpeed: 100,
-
-    // time before typing starts
-    startDelay: 1,
-
-    // backspacing speed
-    backSpeed: 100,
-
-    // shuffle the strings
-    shuffle: false,
-
-    // time before backspacing
-    backDelay: 500,
-
-    // Fade out instead of backspace
-    fadeOut: false,
-    fadeOutClass: 'typed-fade-out',
-    fadeOutDelay: 1000, // milliseconds
-
-    // loop
-    loop: true,
-
-    // false = infinite
-    loopCount: false,
-
-    // show cursor
-    showCursor: false,
-
-    // character for cursor
-    cursorChar: "|",
-
-    // attribute to type (null == text)
-    attr: null,
-
-    // either html or text
-    contentType: 'html'
-
-  });
-
+  // function animate(item,index){
+  //   document.getElementsByClassName('text-hello').innerHTML = item;
+  // }
   // indicator bar 
 
   $('section').each(function (index) {
@@ -199,6 +173,7 @@ var footerHeight = $('.main-footer').height();
 $('.body-wrapper').css({ "margin-bottom": footerHeight + 'px'});
 })
 
+// nav btn
 $(document).on('click','.nav-link[data-name="WORK"]', function(){
   $('.nav-link[data-name="WORK"]').parent().addClass('active');
   // $('[data-name="work"]').parent().addClass('active');
@@ -210,10 +185,11 @@ $(document).on('click','.nav-link[data-name="CONTACT"]', function(){
 })
 
 $(window).mousemove(function( event ) {
-  var top = event.clientY + 'px';
-  var left = event.clientX + 'px';
+  var top = event.clientY ;
+  var left = event.clientX;
+  
   // $('.mouse-move').css({ "transform": "translate3d("+top+","+left +",0px)" });
-  $('.mouse-move').css({ "top": top , "left": left });
+  $('.mouse-move').css({ "top": top+ 'px' , "left": left+ 'px'});
   // var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
   // var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
 });
