@@ -175,7 +175,7 @@ section {
     /* padding-left: 96.7px;
     padding-right: 96.7px; */
     padding-left: 7.5vw;
-    padding-right: 7.5vw;
+    padding-right: 2.5vw;
 }
 
 section>* {
@@ -610,6 +610,7 @@ a.nav-link:hover::before {
     z-index: 0;
     top: 50%;
     transition: none;
+    opacity: 0.95;
 }
 
 .work-item__image .mask{
