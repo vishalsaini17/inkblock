@@ -136,7 +136,7 @@ $(document).ready(function () {
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
 
-  $(window).on('resize scroll', function () {
+  $(window).on('resize scroll load', function () {
     $('section').each(function () {
       if ($(this).isInHalfViewport()) {
         $('#indicate-next').attr('current-index', $(this).data('index'))
@@ -154,6 +154,8 @@ $(document).ready(function () {
     }, 800);
   });
 });
+
+$(window).trigger('resize');
 
 // work animation
 
