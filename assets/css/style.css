@@ -310,6 +310,11 @@ a.nav-link:hover::before {
     right: 0;
     background-color: #231f20;
 }
+.page-indicator  img{
+    /* margin-top: 1.713vw; */
+    margin-top: 3.29vw;
+    cursor: pointer;
+}
 
 .page-indicator i {
     font-size: 20px;
@@ -393,6 +398,8 @@ a.nav-link:hover::before {
 .who-we-are .blue-logo {
     max-width: 15.1vw;
 }
+
+
 
 /* what we do */
 .wwd-section {
@@ -534,6 +541,13 @@ a.nav-link:hover::before {
     border-right-color: transparent;
 }
 
+@media (min-width:1775px){
+    /* .wwd-row{justify-content:flex-start!important;
+    } */
+    .wwd-card {
+         margin-left:50px;
+    }
+}
 /* work section */
 .work-section {
     background-color: #0036d4;
@@ -725,7 +739,6 @@ a.nav-link:hover::before {
 .main-footer .height {
     min-height: 23.5vw;
 }
-
 /* about babber */
 .banner-section {
     min-height: 38.4vw;
