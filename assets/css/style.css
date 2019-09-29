@@ -348,6 +348,9 @@ a.nav-link:hover::before {
     line-height: 1.1;
     padding-top: 7%;
 }
+.text-hello::after{
+    border: 1vw solid !important;
+}
 @media (min-width:1500px){
     .text-hello{
         padding-top: 9%;
