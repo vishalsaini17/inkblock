@@ -86,17 +86,21 @@ $(document).ready(function () {
   })
 
   // indicator offset
-  indicatorOffset = $("#creative-heading").offset().top;
-  $('.page-indicator').css({ "top": indicatorOffset + 'px', "display": "block" });
-
-  $(window).resize(function () {
-    //call to your function and check the window width
+  if($('#creative-heading').length){
     indicatorOffset = $("#creative-heading").offset().top;
     $('.page-indicator').css({ "top": indicatorOffset + 'px', "display": "block" });
-  });
+  
+    $(window).resize(function () {
+      //call to your function and check the window width
+      indicatorOffset = $("#creative-heading").offset().top;
+      $('.page-indicator').css({ "top": indicatorOffset + 'px', "display": "block" });
+    });
+  }
+  
 
 
   // hello animation
+  if($('#hello-aniamte').length){
     var animated_string = ["Namaste", "Hello", "Holla", "Ni Hao", "Hallo"];
     var i = 0;
     var animateLength = animated_string.length;
@@ -111,7 +115,9 @@ $(document).ready(function () {
     if(i==animateLength-1){
       i=0;
     }
-  })();  
+  })(); 
+  }
+     
 
   // function animate(item,index){
   //   document.getElementsByClassName('text-hello').innerHTML = item;
@@ -140,6 +146,7 @@ $(document).ready(function () {
     });
   });
 
+  
   $('#indicate-next').click(function () {
     $('.page-indicator').addClass('page-moving');
     var sectionIndex = $(this).attr('current-index');
@@ -173,16 +180,6 @@ var footerHeight = $('.main-footer').height();
 $('.body-wrapper').css({ "margin-bottom": footerHeight + 'px'});
 })
 
-// nav btn
-$(document).on('click','.nav-link[data-name="WORK"]', function(){
-  $('.nav-link[data-name="WORK"]').parent().addClass('active');
-  // $('[data-name="work"]').parent().addClass('active');
-})
-
-$(document).on('click','.nav-link[data-name="CONTACT"]', function(){
-  $('.nav-link[data-name="CONTACT"]').parent().addClass('active');
-  // $('[data-name="work"]').parent().addClass('active');
-})
 
 $(window).mousemove(function( event ) {
   var top = event.clientY ;
@@ -193,3 +190,55 @@ $(window).mousemove(function( event ) {
   // var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
   // var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
 });
+
+
+
+// nevbar add active class
+// onclick
+$(document).on('click','.nav-link[data-name="WORK"]', function(){
+  $('.nav-link[data-name="WORK"]').parent().addClass('active');
+  $('[data-name="CONTACT"]').parent().removeClass('active');
+  $('[data-name="Home"]').parent().removeClass('active');
+})
+
+$(document).on('click','.nav-link[data-name="CONTACT"]', function(){
+  $('.nav-link[data-name="CONTACT"]').parent().addClass('active');
+  $('[data-name="WORK"]').parent().removeClass('active');
+  $('[data-name="Home"]').parent().removeClass('active');
+})
+
+// on scroll
+if($('#work').length && $('#contact').length){
+  $(window).on('resize scroll', function () {
+    var w_scroll=$(window).scrollTop();
+    var work_top=$('#work').offset().top;
+    var work_height=$('#work').outerHeight();
+    var work_top_height=work_top+work_height;
+    var y=$('#contact').offset().top;
+    if(w_scroll>=work_top-(work_height/3)){
+      $('a[data-name="WORK"]').parent().addClass('active');
+      $('a[data-name="Home"]').parent().removeClass('active');
+
+    }
+    if(w_scroll<work_top-(work_height/3) || w_scroll>work_top_height-(work_height/3) ){
+      $('a[data-name="WORK"]').parent().removeClass('active');
+      $('a[data-name="Home"]').parent().addClass('active');
+    }
+  });
+  
+  $(window).on('resize scroll', function () {
+    var w_scroll=$(window).scrollTop();
+    var contact_top=$('#contact').offset().top;
+    var contact_height=$('#contact').outerHeight();
+    var contact_top_height=contact_top+contact_height;
+    var y=$('#contact').offset().top;
+    if(w_scroll>=contact_top-(contact_height/3)){
+      $('a[data-name="CONTACT"]').parent().addClass('active');
+      $('a[data-name="Home"]').parent().removeClass('active');
+    }
+    if(w_scroll<contact_top-(contact_height/3)||w_scroll>contact_top_height-(contact_height/3) ){
+      $('a[data-name="CONTACT"]').parent().removeClass('active');
+      // $('a[data-name="Home"]').parent().addClass('active');
+    }
+  });
+}
