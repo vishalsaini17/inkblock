@@ -106,11 +106,11 @@ $(document).ready(function () {
     (function loop() {
       // x.innerHTML = s[i];
       document.getElementById('hello-aniamte').innerHTML = animated_string[i];
-      if (++i < animateLength) {
+      if (i++ < animateLength) {
         setTimeout(loop, 1000);  // call myself in 3 seconds time if required
 
       }
-      if (i == animateLength - 1) {
+      if (i == animateLength ) {
         i = 0;
       }
     })();
@@ -222,7 +222,6 @@ if($('#work').length && $('#contact').length){
     }
   });
 }
-
 // cursor moving
 // if ($('.mouse-move').length) {
 //   $(window).mousemove(function (event) {
