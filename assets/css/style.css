@@ -886,15 +886,15 @@ section.project-detail{
         min-height: 150px;
         min-width: 180px;
     }
+    .navbar-brand{
+        line-height: 1;
+        padding-top: 0;
+    }
 }
 
 @media(min-width: 768px) {
     .col-md-about-left {
         max-width: 24vw;
-    }
-    .navbar-brand{
-        line-height: 1;
-        padding-top: 0;
     }
 }
 
