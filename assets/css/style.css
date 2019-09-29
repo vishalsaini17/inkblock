@@ -314,6 +314,7 @@ a.nav-link:hover::before {
     /* margin-top: 1.713vw; */
     margin-top: 3.29vw;
     cursor: pointer;
+    width: 1.77vw;
 }
 
 .page-indicator i {
@@ -890,6 +891,10 @@ section.project-detail{
 @media(min-width: 768px) {
     .col-md-about-left {
         max-width: 24vw;
+    }
+    .navbar-brand{
+        line-height: 1;
+        padding-top: 0;
     }
 }
 

@@ -194,7 +194,7 @@ if($('#work').length && $('#contact').length){
     var work_top=$('#work').offset().top;
     var work_height=$('#work').outerHeight();
     var work_top_height=work_top+work_height;
-    var y=$('#contact').offset().top;
+    // var y=$('#contact').offset().top;
     if(w_scroll>=work_top-(work_height/3)){
       $('a[data-name="WORK"]').parent().addClass('active');
       $('a[data-name="Home"]').parent().removeClass('active');
@@ -211,7 +211,7 @@ if($('#work').length && $('#contact').length){
     var contact_top=$('#contact').offset().top;
     var contact_height=$('#contact').outerHeight();
     var contact_top_height=contact_top+contact_height;
-    var y=$('#contact').offset().top;
+    // var y=$('#contact').offset().top;
     if(w_scroll>=contact_top-(contact_height/3)){
       $('a[data-name="CONTACT"]').parent().addClass('active');
       $('a[data-name="Home"]').parent().removeClass('active');
