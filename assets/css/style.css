@@ -175,7 +175,7 @@ section {
     /* padding-left: 96.7px;
     padding-right: 96.7px; */
     padding-left: 7.5vw;
-    padding-right: 2.5vw;
+    padding-right: 7.5vw;
 }
 
 section>* {
@@ -312,9 +312,12 @@ a.nav-link:hover::before {
 }
 .page-indicator  img{
     /* margin-top: 1.713vw; */
-    margin-top: 3.29vw;
+    /* margin-top: 3.29vw;
     cursor: pointer;
-    width: 1.77vw;
+    width: 1.77vw; */
+    margin-top: 2.5vw;
+    cursor: pointer;
+    width: 1.5vw;
 }
 
 .page-indicator i {
@@ -332,6 +335,15 @@ a.nav-link:hover::before {
     /* min-height: calc(100vh - 110px); */
     padding-top: 4vw;
 }
+
+.indicator-true .section-hello {
+    padding-right: 2.5vw;
+}
+
+.creativity #creative-heading{
+    font-size: 4.1vw;
+}
+
 .creativity{
     padding-left: 0.77vw;
 }
@@ -385,7 +397,7 @@ a.nav-link:hover::before {
 }
 
 .who-we-are .btn-outline-light:hover {
-    color: #006ff9;
+    color: #006ff9 !important;
 }
 
 .wwa-right {
@@ -784,10 +796,11 @@ a.nav-link:hover::before {
 
 .grow-heading {
     margin-bottom: 3.5vw !important;
+    font-size: 2.8vw;
 }
 
 .about-us {
-    font-size: 1.684vw;
+    font-size: 1.4vw;
 }
 
 .about-us p {

@@ -66,7 +66,7 @@ $(document).ready(function () {
       if ($(window).scrollTop() > $('.nav-height').outerHeight(true)) {
         $(".main-navbar").addClass("hide-navbar");
       }
-    }, 1000));
+    }, 2000));
 
     // hide navbar time interval
     // function navTimeout() {
