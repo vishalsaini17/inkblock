@@ -239,9 +239,11 @@ section>* {
 .nav-logo-2{
     transform: scale(0);
     transition: all 0.5s;
+    border-radius: 50%;
 }
 .main-navbar .navbar-brand:hover .nav-logo-2{
     transform: scale(1);
+    border-radius: 0px;
 }
 .main-navbar .nav a {
     font-family: "HurmeGeometricSans3";
@@ -757,6 +759,24 @@ a.nav-link:hover::before {
     color: #ffffff;
     padding: 0 10vw;
 }
+
+.footer-logo-box{
+    position: relative;
+    display: inline-block;
+}
+
+.footer-logo-blue{
+    position: absolute;
+    left: 0;
+    transition: all .5s;
+    transform: scale(0);
+    border-radius: 50%;
+
+}
+.footer-logo-box:hover .footer-logo-blue{
+    transform: scale(1);
+    border-radius: 0px;
+}
 @media (max-width:1500px){
     .main-footer {     
         font-size: 1.2vw;
@@ -885,6 +905,7 @@ section.project-detail{
 .footer-text h5 {
     /* margin-bottom: 2.08vw; */
     font-size: 1.76vw;
+    margin-bottom: 0.5rem;
 }
 
 /* mouse-move */
