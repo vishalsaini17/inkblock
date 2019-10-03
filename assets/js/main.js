@@ -7,7 +7,9 @@ function smoothScroll(offsetVal = 0) {
 if ($('#work').length && $('#contact').length) {
   var offset_top_work = $('#work').offset().top;
   var offset_top_contact = $('#contact').offset().top;
+  // var offset_top_creative = $('#creative-section').offset().top;
 }
+
 
 
 function amountscrolled() {
