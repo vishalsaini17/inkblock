@@ -33,7 +33,7 @@
       <a href="index.html" class="navbar-brand  mx-0"><img src="assets/img/logo-nav.svg" alt="inkBlock"></a>
       <div class="col px-0">
         <ul class="nav justify-content-end">
-          <li class="active"><a href="index.html" class="nav-link" data-name="Home"></a></li>
+          <li class="active home-li"><a href="index.html#creative-section" class="nav-link" data-name="Home"></a></li>
           <li><a href="index.html#work" onclick="smoothScroll(offset_top_work)" class="nav-link" data-name="WORK"></a>
           </li>
           <li><a href="about.html" class="nav-link" data-name="ABOUT"></a></li>
@@ -45,7 +45,7 @@
 
   <div class="body-wrapper">
 
-    <section class="section-hello zero">
+    <section class="section-hello zero" id="creative-section">
       <div class="container-fluid">
         <div class="row creativity">
           <div class="col-md-9 mt-3">
@@ -210,3 +210,10 @@
 </body>
 
 </html>
+
+<script>
+  $( ".home-li" ).click(function() {
+    // $( this ).slideUp();
+    smoothScroll();
+  });
+  </script>
