@@ -235,3 +235,12 @@ if($('#work').length && $('#contact').length){
 //   });
 
 // }
+
+
+
+
+// $('a[data-name="Home"]').click(function(){
+//     smoothScroll(0);
+// });
+
+
