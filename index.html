@@ -166,22 +166,22 @@
             <h4 class="say-hi">Say Hi!</h4>
             <p class="contact-subtitle">We are always excited to hear a new idea!</p>
 
-            <form action="#" class="col-12 col-lg-10 px-0 pt-4">
+            <form action="#" class="col-12 col-lg-10 px-0 pt-4" id="contact-form">
               <div class="form-row contact-form">
                 <div class="col-12 form-group">
-                  <input type="text" class="form-control" placeholder="Your name">
+                  <input type="text" class="form-control" placeholder="Your name" name="from_name">
                 </div>
                 <div class="col-12 col-md-6 form-group">
-                  <input type="text" class="form-control" placeholder="Your email">
+                  <input type="text" class="form-control" placeholder="Your email" name="from_email">
                 </div>
                 <div class="col-12 col-md-6 form-group">
-                  <input type="text" class="form-control" placeholder="Your phone">
+                  <input type="text" class="form-control" placeholder="Your phone" name="phone_no">
                 </div>
                 <div class="col-12 form-group">
-                  <input type="text" class="form-control" placeholder="Your subject">
+                  <input type="text" class="form-control" placeholder="Your subject" name="from_subject">
                 </div>
                 <div class="col-12 form-group">
-                  <textarea class="form-control" rows="6" cols="30" placeholder=" Tell us somthing"></textarea>
+                  <textarea class="form-control" rows="6" cols="30" placeholder=" Tell us somthing" name="message_html"></textarea>
                 </div>
                 <div class="col-12 form-group text-right">
                   <button class="btn btn-primary btn-round">SEND</button>
@@ -215,6 +215,14 @@
     </footer>
   </div>
   <script src="assets/js/main.js"></script>
+ 
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_oBHPufvMtEDOpvbWBnEXi");
+   })();
+</script>
+
 </body>
 </html>
 

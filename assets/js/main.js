@@ -246,3 +246,41 @@ if($('#work').length && $('#contact').length){
 // });
 
 
+// var templateParams = {
+//   name: 'James',
+//   notes: 'Check this out!'
+// };
+
+// emailjs.send('kishanpal', 'inkblockstudio', templateParams)
+//   .then(function(response) {
+//      console.log('SUCCESS!', response.status, response.text);
+//   }, function(error) {
+//      console.log('FAILED...', error);
+//   });
+
+
+var myform = $("form#contact-form");
+myform.submit(function(event){
+	event.preventDefault();
+
+	var params = myform.serializeArray().reduce(function(obj, item) {
+     obj[item.name] = item.value;
+     return obj;
+  }, {});
+
+  // Change to your service ID, or keep using the default service
+  var service_id = "smtp_server";
+
+  var template_id = "template_xeru8fU8";
+  myform.find("button").text("Sending...");
+  emailjs.send(service_id, template_id, params)
+  	.then(function(){ 
+       alert("Sent!");
+       myform.find("button").text("Send");
+     }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Send");
+    });
+
+  return false;
+});
