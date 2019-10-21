@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="Logo" width="34.15" height="31.873" viewBox="0 0 34.15 31.873">
-    <defs>
-        <style>
-            .cls-1{fill:#282828}
-        </style>
-    </defs>
-    <path id="Path_2" d="M-1856.68 56.056l-7.076 16.512V56.056h-6.584L-1884 87.929h6.83l7.083-16.527v16.527h6.577l13.66-31.873z" class="cls-1" data-name="Path 2" transform="translate(1884 -56.056)"/>
-    <path id="Path_3" d="M-1848.378 91.235l1.976 4.545h6.83l-5.391-12.514z" class="cls-1" data-name="Path 3" transform="translate(1873.722 -63.907)"/>
-    <path id="Path_4" d="M-1884 68.856v15.936l6.83-15.937z" class="cls-1" data-name="Path 4" transform="translate(1884 -59.749)"/>
-    <path id="Rectangle_3" d="M0 0h6.83v6.83H0z" class="cls-1" data-name="Rectangle 3"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="139.414" height="53.492" viewBox="0 0 139.414 53.492"><defs><style>.a,.c,.d{fill:#282828;}.b{fill:#fff;}.c,.d{font-size:22px;}.c{font-family:HurmeGeometricSans4-Regular, "Hurme Geometric Sans 4";letter-spacing:0.09em;}.d{font-family:HurmeGeometricSans4-Black, "Hurme Geometric Sans 4";font-weight:800;letter-spacing:0.06em;}</style></defs><g transform="translate(-53.221 -50)"><g transform="translate(44 45)"><g transform="translate(0 0)"><rect class="a" width="51.052" height="48.372" transform="translate(9.221 9.148)"/><path class="b" d="M38.389,5.99,30.013,25.542V5.99H22.192L6.02,43.742h8.086l8.4-19.576V43.742h7.8L46.475,5.99Z" transform="translate(8.511 8.469)"/><path class="b" d="M18.46,24.928,20.8,30.311h8.086l-6.4-14.821Z" transform="translate(26.099 21.9)"/><path class="b" d="M6.02,10.46V29.336L14.106,10.46Z" transform="translate(8.511 14.788)"/><rect class="b" width="8.086" height="8.086" transform="translate(14.531 14.459)"/></g></g><g transform="translate(114.356 48)"><text class="c" transform="translate(-0.722 49.492)"><tspan x="0" y="0">BLOCK</tspan></text><text class="d" transform="translate(-0.052 27)"><tspan x="0" y="0">INK</tspan></text></g></g></svg>

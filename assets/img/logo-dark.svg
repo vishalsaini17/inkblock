@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="114.329" height="106.707" viewBox="0 0 114.329 106.707">
-    <defs>
-        <style>
-            .cls-1{opacity:.1}.cls-2{fill:#fff}
-        </style>
-    </defs>
-    <g id="Footer_Logo" class="cls-1" data-name="Footer Logo">
-        <g id="Group_398" data-name="Group 398">
-            <path id="Path_2603" d="M304.413 109.927l-23.691 55.279v-55.279h-22.041l-45.732 106.708h22.866l23.713-55.33v55.33h22.019l45.732-106.707z" class="cls-2" data-name="Path 2603" transform="translate(-212.949 -109.927)"/>
-            <path id="Path_2604" d="M332.207 227.7l6.616 15.217h22.866l-18.049-41.891z" class="cls-2" data-name="Path 2604" transform="translate(-247.36 -136.213)"/>
-            <path id="Path_2605" d="M212.949 152.78v53.354l22.866-53.354z" class="cls-2" data-name="Path 2605" transform="translate(-212.949 -122.292)"/>
-            <path id="Rectangle_106" d="M0 0h22.866v22.866H0z" class="cls-2" data-name="Rectangle 106"/>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="158.309" height="150" viewBox="0 0 158.309 150"><defs><style>.a{fill:#36373b;}.b{fill:#1f2024;}</style></defs><g transform="translate(-53.087 -52.669)"><rect class="a" width="158.308" height="150" transform="translate(53.087 52.67)"/><path class="b" d="M105.748,5.99,79.942,66.2V5.99h-24.1L6.02,122.247H30.933l25.88-60.284v60.284H80.835L130.662,5.99Z" transform="translate(63.938 63.551)"/><path class="b" d="M18.46,45.476l7.439,17.1H51.59L31.267,15.49Z" transform="translate(143.01 123.221)"/><path class="b" d="M6.02,10.46V70.431L31.711,10.46Z" transform="translate(63.938 91.35)"/><rect class="b" width="25.691" height="25.691" transform="translate(69.958 69.541)"/></g></svg>

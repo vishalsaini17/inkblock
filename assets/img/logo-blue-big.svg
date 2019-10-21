@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="290.949" height="271.552" viewBox="0 0 290.949 271.552">
-    <defs>
-        <style>
-            .cls-1{fill:#006ff9}
-        </style>
-    </defs>
-    <g id="Blue_Big_Logo" data-name="Blue Big Logo" transform="translate(1675.475 -1220.309)">
-        <g id="Group_4" data-name="Group 4">
-            <path id="Path_5" d="M-1442.715 1220.309L-1503 1360.984v-140.675h-56.09l-116.379 271.552h58.19l60.345-140.8v140.8h56.035l116.379-271.552z" class="cls-1" data-name="Path 5"/>
-            <path id="Path_6" d="M-1459.553 1453.135l16.837 38.726h58.19l-45.932-106.614z" class="cls-1" data-name="Path 6"/>
-            <path id="Path_7" d="M-1675.474 1297.9v135.776l58.19-135.776z" class="cls-1" data-name="Path 7"/>
-            <path id="Rectangle_5" d="M0 0h58.19v58.19H0z" class="cls-1" data-name="Rectangle 5" transform="translate(-1675.474 1220.309)"/>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="293.922" height="278.496" viewBox="0 0 293.922 278.496"><defs><style>.a{fill:#006ff9;}.b{fill:#fff;}</style></defs><g transform="translate(-53.087 -52.67)"><rect class="a" width="293.921" height="278.496" transform="translate(53.087 52.67)"/><path class="b" d="M192.379,5.99,144.156,118.556V5.99H99.13L6.02,223.339H52.575l48.362-112.7v112.7h44.887L238.934,5.99Z" transform="translate(77.64 77.253)"/><path class="b" d="M18.46,69.827l13.48,30.99H78.5L41.668,15.49Z" transform="translate(238.078 199.774)"/><path class="b" d="M6.02,10.46V119.134L52.575,10.46Z" transform="translate(77.64 134.903)"/><rect class="b" width="46.555" height="46.555" transform="translate(83.66 83.243)"/></g></svg>
