@@ -527,6 +527,36 @@ if($('.cover').length){
   $('.nav-link[data-name="WORK"]').parent().addClass('active');
 }
 
+// one page of help section
+$('.help-link').click(function(){
+  var current_help_index=$(this).attr('data-index');
+  debugger
+localStorage.setItem("current_help_index", current_help_index);
+});
+if(localStorage.getItem("current_help_index")){
+var current_help_index=localStorage.getItem("current_help_index");
+debugger
+$('.do-part[data-index='+ current_help_index+']').addClass('block');
+debugger
+}
+$('.design-current').click(function(){
+$('.do-part[data-index=0]').addClass('block');
+$('.do-part[data-index=1]').removeClass('block');
+$('.do-part[data-index=2]').removeClass('block');
+debugger
+});
+$('.brand-current').click(function(){
+$('.do-part[data-index=1]').addClass('block');
+$('.do-part[data-index=0]').removeClass('block');
+$('.do-part[data-index=2]').removeClass('block');
+debugger
+});
+$('.digital-current').click(function(){
+$('.do-part[data-index=2]').addClass('block');
+$('.do-part[data-index=1]').removeClass('block');
+$('.do-part[data-index=0]').removeClass('block');
+debugger
+});
 
 // projects page dynamic code
 // project slider btn
