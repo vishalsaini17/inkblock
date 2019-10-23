@@ -356,6 +356,16 @@ $(document).ready(function () {
     });
   }
 
+  $(".xslide-handle").on("mousedown touchstart", function (e) {
+    // $(this).addClass('grabbing')
+    $(this).css({ "opacity": "1", "transform": "scale(1.3)" });
+    // debugger
+  })
+
+  $("body").on("mouseup touchend", function (e) {
+    // $(this).removeClass('grabbing')
+    $(".xslide-handle").css({ "opacity": "0", "transform": "scale(0.5)" });
+  })
 
 // form validation
   // var myform = $("form#contact-form");
@@ -519,11 +529,16 @@ if($('.about-info').length){
 // home active class
 if($('.section-hello').length){
   $('.nav-link[data-name="Home"]').parent().addClass('active');
+  // var x = $(window).scrollTop(0);
+  // var x= $(document).offset({top:0});
+  
+  // $(".home-scroll").smoothScroll();
+  // debugger
 }
 
 // projects active class
 
-if($('.cover').length){
+if($('#project_content').length){
   $('.nav-link[data-name="WORK"]').parent().addClass('active');
 }
 
