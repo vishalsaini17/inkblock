@@ -669,6 +669,7 @@ a.nav-link:hover::before {
     height: 12em;
     font-size: 13px;
     font-size: 0.68vw;
+    pointer-events: none;
 }
 
 .has-circle::before {
