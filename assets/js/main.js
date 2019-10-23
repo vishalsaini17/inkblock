@@ -526,3 +526,136 @@ if($('.section-hello').length){
 if($('.cover').length){
   $('.nav-link[data-name="WORK"]').parent().addClass('active');
 }
+
+
+// projects page dynamic code
+// project slider btn
+$('#project_content').carousel({
+  interval: false,
+  pause: true
+})
+  // autoslide pause
+$('.carousel-item').each(function (i) {
+  $(this).attr('data-index', i);
+});
+
+$('.projects-link').click(function () {
+  go($(this));
+});
+function go(ele) {
+  var current_index = Number(ele.attr('data-index'));
+  var project_name = $('.projects-link[data-index =' + current_index + ']').attr('data-name');
+  var alise_name = $('.projects-link[data-index =' + current_index + ']').attr('alise');
+  var next_index = current_index + 1;
+  var prev_index = current_index - 1;
+  if (current_index == 4) {
+    next_index = 0
+  }
+  else if (current_index == 0) {
+    prev_index = 4
+  }
+  var next_name = $('.projects-link[data-index =' + next_index + ']').attr('data-name');
+  var next_alise_name = $('.projects-link[data-index =' + next_index + ']').attr('alise');
+  var prev_name = $('.projects-link[data-index =' + prev_index + ']').attr('data-name');
+  var prev_alise_name = $('.projects-link[data-index =' + prev_index + ']').attr('alise');
+  localStorage.setItem("project_name", project_name);
+  localStorage.setItem("alise_name", alise_name);
+  localStorage.setItem("current_index", current_index);
+  localStorage.setItem("next_index", next_index);
+  localStorage.setItem("prev_index", prev_index);
+  localStorage.setItem("next_name", next_name);
+  localStorage.setItem("prev_name", prev_name);
+  localStorage.setItem("next_alise_name", next_alise_name);
+  localStorage.setItem("prev_alise_name", prev_alise_name);
+}
+if (localStorage.getItem("project_name") && localStorage.getItem("alise_name") && localStorage.getItem("next_name") && localStorage.getItem("prev_name") && localStorage.getItem("current_index") && localStorage.getItem("next_alise_name")
+  && localStorage.getItem("prev_alise_name") && localStorage.getItem("next_index") && localStorage.getItem("prev_index")) {
+  if ($('#project_name').length && $('#alise_name').length && $('#prev_project').length && $('#next_project').length && $('.carousel-item').length) {
+    var project_name = localStorage.getItem("project_name");
+    var alise_name = localStorage.getItem("alise_name");
+    var next_name = localStorage.getItem("next_name");
+    var prev_name = localStorage.getItem("prev_name");
+    var next_alise_name = localStorage.getItem("next_alise_name");
+    var prev_alise_name = localStorage.getItem("prev_alise_name");
+    var next_index = localStorage.getItem("next_index");
+    var prev_index = localStorage.getItem("prev_index");
+    var current_index = localStorage.getItem("current_index");
+    $('#project_name').prepend(project_name);
+    $('#alise_name').prepend(alise_name);
+    $('#prev_project').prepend(prev_name);
+    $('#next_project').prepend(next_name);
+
+    $('.next-link').attr('data-name', next_name);
+    $('.next-link').attr('alise', next_alise_name);
+    $('.next-link').attr('data-index', next_index);
+
+    $('.prev-link').attr('data-name', prev_name);
+    $('.prev-link').attr('alise', prev_alise_name);
+    $('.prev-link').attr('data-index', prev_index);
+
+    $('.my-slide[data-index=' + current_index + ']').addClass('active');
+        // next btn code project page
+    if ($('.next-link').length) {
+      $('.next-link').click(function () {
+        debugger
+        var current_index = Number($(this).attr('data-index'));
+        if (current_index > 4 ) {
+          current_index = 0;
+        }      
+        var project_name = $('.carousel-item[data-index =' + current_index + ']').attr('data-name');
+        var alise_name = $('.carousel-item[data-index =' + current_index + ']').attr('alise');
+        var next_index = current_index + 1;
+        var prev_index = current_index - 1;
+        if(current_index == 4){
+          next_index = 0;
+        }
+        else if (current_index == 0) {
+          prev_index = 4
+        }
+        var project_next = $('.carousel-item[data-index =' + next_index + ']').attr('data-name');
+        var project_prev = $('.carousel-item[data-index =' + prev_index + ']').attr('data-name');
+        $('.prev-link').attr('data-index',prev_index);
+        $('.next-link').attr('data-index',next_index);
+        document.getElementById('alise_name').innerText=alise_name;
+        document.getElementById('project_name').innerText=project_name;
+        document.getElementById('next_project').innerText=project_next;
+        document.getElementById('prev_project').innerText=project_prev;
+        current_index = current_index + 1;
+        $(this).attr('data-index', current_index);
+        // current_index = next_index;
+        debugger
+      });
+    }
+        // prev btn code project page
+    if ($('.prev-link').length) {
+      $('.prev-link').click(function () {
+        debugger
+        var current_index = Number($(this).attr('data-index'));
+        if(current_index < 0){
+          current_index = 4;
+        }
+        var project_name = $('.carousel-item[data-index =' + current_index + ']').attr('data-name');
+        var alise_name = $('.carousel-item[data-index =' + current_index + ']').attr('alise');
+        var next_index = current_index + 1;
+        var prev_index = current_index - 1;
+        if(current_index == 0){
+          prev_index = 4;
+        }
+        if(current_index == 4){
+          next_index = 0;
+        }
+        var project_next = $('.carousel-item[data-index =' + next_index + ']').attr('data-name');
+        var project_prev = $('.carousel-item[data-index =' + prev_index + ']').attr('data-name');
+        $('.next-link').attr('data-index',next_index);
+        $('.prev-link').attr('data-index',prev_index);
+        document.getElementById('alise_name').innerText=alise_name;
+        document.getElementById('project_name').innerText=project_name;
+        document.getElementById('next_project').innerText=project_next;
+        document.getElementById('prev_project').innerText=project_prev;
+        current_index = current_index - 1 ;
+        $(this).attr('data-index', current_index);
+        debugger
+      });
+    }    
+  }
+}

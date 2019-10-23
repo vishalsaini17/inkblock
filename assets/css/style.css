@@ -1237,7 +1237,7 @@ section.project-detail {
     font-weight: 900;
 }
 
-.project-heading {
+.project-heading span {
     font-family: "HurmeGeometricSans3";
     color: #006ff9;
     font-weight: 600;

@@ -93,13 +93,13 @@
       <div class="container-fluid">
         <div class="work-wrapper d-flex">
           <ul class="list-unstyled work-list">
-            <li><a href="projects.php#iwheel" class="projects-link" data-name='iWheels'>iWheels <small>(UX/UI, App Design)</small></a></li>
-            <li><a href="projects.php#global" class="projects-link" data-name='Global Connectors'>Global Connectors <small>(UX/UI, WebDesign)</small></a></li>
-            <li><a href="projects.php#mirah" class="projects-link" data-name='Mirah Belle Naturals'>Mirah Belle Naturals
+            <li><a href="projects.php" class="projects-link" data-name='iWheels' alise='UX/UI' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
+            <li><a href="projects.php" class="projects-link" data-name='Global Connectors' alise='UX/UI' data-index="1">Global Connectors <small>(UX/UI, WebDesign)</small></a></li>
+            <li><a href="projects.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packging' data-index="2">Mirah Belle Naturals
                 <small>(Packging)</small></a></li>
-            <li><a href="projects.php#cybersun" class="projects-link" data-name='CyberSun Consulting'>CyberSun Consulting <small>(Logo)</small></a>
+            <li><a href="projects.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
             </li>
-            <li><a href="projects.php#transform" class="projects-link" data-name='Transform '>Transform <small>(Booklet)</small></a></li>
+            <li><a href="projects.php" class="projects-link" data-name='Transform '  alise='Booklet' data-index="4">Transform <small>(Booklet)</small></a></li>
           </ul>
 
           <div class="work-images-list">
