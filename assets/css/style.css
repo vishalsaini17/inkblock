@@ -1372,6 +1372,10 @@ section.project-detail {
 /* do-project  css work do pages */
 .do-section{
     padding-top: 7vw;
+    display: none;
+}
+.block{
+    display: block;
 }
 .sticky-part{
     position: sticky;
