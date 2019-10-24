@@ -27,50 +27,67 @@
 
       <section class="team">
          <div class="container-fluid">
-            <div class="row justify-content-between">
+            <div class="row justify-content-start">
                <div class="col-lg-1 col-md-1 col-sm-1 col-1 team-text text-left"><span>TEAM</span></div>
-               <div class="col-lg-3 col-md-3 col-sm-3 col-3  team-box">
+               <div class="col-lg-2 col-md-2 col-sm-2 col-2  team-box">
                   <div>
-                     <div class="round-img-box" style="background-image: url('assets/img/photo-1506794778202-cad84cf45f1d.jpg')">
+                     <div class="round-img-box" style="background-image: url('assets/img/harsh.png')">
                      </div>
                      <div class="founder-box">
                         <h5>Harsh Raghav</h5>
                         <h6>Co-Founder</h6>
                         <p>
-                           Specialized in interface & experience design
+                        Skilled in User Interface & User Experience design.
                         </p>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harsh-raghav-b62589174/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/RageTheD"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/RageTheD"><i class="fab fa-twitter"></i></a>
                      </div>
                   </div>
                </div>
 
-               <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-lg-3 team-box ">
+               <div class="col-lg-2 col-md-2 col-sm-2 col-2  team-box ">
                   <div>
-                     <div class="round-img-box" style="background-image: url('assets/img/photo-1506794778202-cad84cf45f1d.jpg')">
+                     <div class="round-img-box" style="background-image: url('assets/img/anshul.png')">
                      </div>
                      <div class="founder-box">
                         <h5>Anshul Katala</h5>
                         <h6>Co-Founder</h6>
                         <p>
-                           Skilled in videography & motion graphics
+                        Skilled in User Interface & Motion Graphics.
                         </p>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anshul-katala-8b067a160/"><i class="fab fa-linkedin"></i></a>
+                        <!-- <i href="#"><i class="fab fa-instagram"></i></a> -->
                      </div>
                   </div>
                </div>
 
-               <div class="col-lg-3 col-md-3 col-sm-3 col-3 col-lg-3  team-box ">
+               <div class="col-lg-2 col-md-2 col-sm-2 col-2   team-box ">
                   <div>
-                     <div class="round-img-box" style="background-image: url('assets/img/photo-1506794778202-cad84cf45f1d.jpg')">
+                     <div class="round-img-box" style="background-image: url('assets/img/jatin.png')">
                      </div>
                      <div class="founder-box">
                         <h5>Jatin Rathor</h5>
                         <h6>Co-Founder</h6>
                         <p>
-                           Specialized in Product & Package design
+                        Specialized in Product & Package design.
+                        </p>
+                        <a href="https://www.linkedin.com/in/jatin-rathor-743b6a146/"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a> -->
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-2 col-md-2 col-sm-2 col-2   team-box ">
+                  <div>
+                     <div class="round-img-box" style="background-image: url('assets/img/deepak.png')">
+                     </div>
+                     <div class="founder-box">
+                        <h5>Deepak Raghav</h5>
+                        <h6>Co-Founder</h6>
+                        <p>
+                        Specialized in Product & Experience design.
                         </p>
                         <a href="#"><i class="fab fa-facebook-square"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>

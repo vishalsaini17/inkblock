@@ -1041,7 +1041,7 @@ a.nav-link:hover::before {
 
 /* team section about page*/
 .team {
-    padding-top: 3vw;
+    padding-top: 4vw;
     position: relative;
     padding-bottom: 3.45vw;
 }
@@ -1058,7 +1058,7 @@ a.nav-link:hover::before {
 .team-text span {
     font-family:HurmeGeometricSans3 ;
     position: absolute;
-    top: 47%;
+    top: 49%;
     left: 55%;
     transform: translate(-50%, -50%) rotate(-90deg);
     font-size: 8.5vw;
@@ -1068,9 +1068,11 @@ a.nav-link:hover::before {
     opacity: 1;
     font-weight: 900;
 }
-
+.team-box{
+    margin: 0vw 2.56vw;
+}
 .team-box>div {
-    width: 20.3vw;
+    width: 18.3vw;
     padding: 2.4vw 1.34vw;
 }
 
@@ -1083,26 +1085,27 @@ a.nav-link:hover::before {
 }
 
 .team-box .round-img-box {
-    height: 16.5vw;
-    width: 16vw;
+    height: 13.65vw;
+    width: 13.6vw;
     overflow: hidden;
     border-radius: 100%;
     border: 0.2vw solid white;
     margin: auto;
-    background-color: black;
+    /* background-color: black; */
     background-size: cover;
     box-shadow: 0px 8px 30px #00000017;
 }
 
 .team-box .founder-box {
-    width: 16.5vw;
+    width: 13.6vw;
     padding-top: 2.6vw;
     margin: auto;
 }
 
 .team-box .founder-box h5 {
     font-family: HurmeGeometricSans3;
-    font-size: 2.082vw;
+    /* font-size: 2.082vw; */
+    font-size: 1.67vw;
     color: #282828;
     font-weight: 600;
     letter-spacing: 0;
@@ -1111,18 +1114,18 @@ a.nav-link:hover::before {
 
 .team-box .founder-box h6 {
     font-family: HurmeGeometricSans3;
-    font-size: 0.94vw;
+    font-size: 0.73vw;
     color: #006FF9;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.14vw;
+    letter-spacing: 0.11vw;
 }
 
 .team-box .founder-box p {
     font-family: HurmeGeometricSans3;
-    font-size: 1.052vw;
+    font-size: 0.93vw;
     color: #282828;
-    letter-spacing: 0.125vw;
+    letter-spacing: 0.075vw;
     font-weight: 600;
     opacity: .8;
     line-height: 1.4;
@@ -1133,7 +1136,7 @@ a.nav-link:hover::before {
 .team-box .founder-box a {
     font-family: HurmeGeometricSans3;
     text-decoration: none;
-    font-size: 1.38vw;
+    font-size: 1.1vw;
     letter-spacing: 0.2vw;
     color: #282828;
     text-transform: uppercase;
@@ -1151,10 +1154,10 @@ a.nav-link:hover::before {
     position: absolute;
     display: block;
     height: 2px;
-    width: 10.13vw;
+    width: 19.4vw;
     background-color: #006ff9;
     top: 0;
-    left: 51.5%;
+    left: 45.5%;
 }
 
 /* contact now about page */
