@@ -1580,3 +1580,28 @@ input[type=number]::-webkit-inner-spin-button {
   .alert-danger{
       background-color: #e51c23;
   }
+
+  .carousel-fade .carousel-item{
+      transition: none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+}
+.project-heading{
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+    from {display: none;}
+    to {display: block;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    from {display: none;}
+    to {display: block;}
+  }
