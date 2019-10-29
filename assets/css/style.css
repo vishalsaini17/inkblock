@@ -1583,3 +1583,21 @@ input[type=number]::-webkit-inner-spin-button {
   .alert-danger{
       background-color: #e51c23;
   }
+
+
+  /* /page :-moz-loading */
+  #test{
+      text-align: center;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 100%;
+      background-color: white;
+      z-index: 5;
+      transition: 2s linear;
+  }
+  #test img{
+      transform: translateY(40vh);
+      visibility: visible;
+  }

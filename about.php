@@ -110,7 +110,7 @@
             </div>
          </div>
       </section>
-    
+   
     <?php require "required/footer.php" ?>
     <?php require "required/foot-link.php" ?>
   

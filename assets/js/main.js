@@ -692,3 +692,32 @@ if (localStorage.getItem("project_name") && localStorage.getItem("alise_name") &
     }    
   }
 }
+
+
+// page loading
+// $(document).ready(function() { 
+//   setTimeout(function(){ 
+//     $('#test>img').css('visibility','hidden');
+//     }, 100);
+//     $('#test').css('right',100 +'%');
+    
+
+  
+// }); 
+
+if($('.test').length){
+  $('#test').css('right',0);
+debugger
+  $("img").on('load', function() {
+    debugger
+     console.log("image loaded correctly"); 
+     $('#test>img').css('visibility','hidden');
+    $('#test').css('right',100 +'%');
+    });
+    $('#test>img').css('visibility','hidden');
+    $('#test').css('right',100 +'%');
+}
+
+    // .on('error', function() { console.log("error loading image"); })
+    // .attr("src", $(originalImage).attr("src"))/
+

@@ -1,7 +1,9 @@
 <?php require "required/head-links.php" ?>
 <?php require "required/navbar.php" ?>
-
-   <div class="body-wrapper">
+<div id="test">
+   <img src="favicon.ico" alt="">
+</div>
+   <div class="body-wrapper test" >
       <section class="project-detail pb-0">
          <div class="my-container">
             <div class="row">
@@ -28,7 +30,7 @@
                                        <div class="row">
                                           <div class="col-12 mb-5">
                                              <ul class="list-unstyled">
-                                                <li><img src="projects/mockup-01.jpg" alt="project name" class="w-100 img-fluid"></li>
+                                                <li><img src="projects/mockup-01.jpg" alt="project name" class="w-100 img-fluid have"></li>
                                                 <li><img src="projects/mockup-02.jpg" alt="project name" class="w-100 img-fluid"></li>
                                                 <li><img src="projects/mockup-03.jpg" alt="project name" class="w-100 img-fluid"></li>
                                                 <li><img src="projects/mockup-04.jpg" alt="project name" class="w-100 img-fluid"></li>
