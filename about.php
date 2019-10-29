@@ -39,9 +39,9 @@
                         <p>
                         Skilled in User Interface & User Experience design.
                         </p>
-                        <a href="https://www.linkedin.com/in/harsh-raghav-b62589174/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/RageTheD"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://twitter.com/RageTheD"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/harsh-raghav-b62589174/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/RageTheD" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/RageTheD" target="_blank"><i class="fab fa-twitter"></i></a>
                      </div>
                   </div>
                </div>
@@ -56,7 +56,7 @@
                         <p>
                         Skilled in User Interface & Motion Graphics.
                         </p>
-                        <a href="https://www.linkedin.com/in/anshul-katala-8b067a160/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/anshul-katala-8b067a160/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <!-- <i href="#"><i class="fab fa-instagram"></i></a> -->
                      </div>
                   </div>
@@ -70,9 +70,9 @@
                         <h5>Jatin Rathor</h5>
                         <h6>Co-Founder</h6>
                         <p>
-                        Specialized in Product & Package design.
+                        Skilled in Product & Package design.
                         </p>
-                        <a href="https://www.linkedin.com/in/jatin-rathor-743b6a146/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/jatin-rathor-743b6a146/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <!-- <a href="#"><i class="fab fa-facebook-square"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a> -->
                      </div>
@@ -85,12 +85,12 @@
                      </div>
                      <div class="founder-box">
                         <h5>Deepak Raghav</h5>
-                        <h6>Co-Founder</h6>
+                        <h6>Senior Designer</h6>
                         <p>
-                        Specialized in Product & Experience design.
+                        Skilled in Product & Experience design.
                         </p>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                      </div>
                   </div>
                </div>
@@ -105,7 +105,7 @@
                   <h4>We are just a whisper away to hear from you</h4>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-right pr-4 ">
-                  <a href="#">Contact now</a>
+                  <a href="index.php#contact">Contact now</a>
                </div>
             </div>
          </div>

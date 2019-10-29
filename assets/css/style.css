@@ -473,6 +473,7 @@ a.nav-link:hover::before {
     font-size: 1.15vw;
     letter-spacing: 0;
     color: #39393F;
+    font-weight: 400;
 }
 
 
@@ -498,6 +499,9 @@ a.nav-link:hover::before {
     padding-left: 6.1vw;
 }
 
+.wwd-padding>h3{
+    color: #006FF9;
+}
 
 .wwd-section {
     color: #39393f;
@@ -910,6 +914,7 @@ a.nav-link:hover::before {
 .contact-footer{
     letter-spacing: 1.1px;
     font-weight: 600;
+    font-size: 1.45vw;
 }
 
 .footer-logo-box {
@@ -1163,7 +1168,7 @@ a.nav-link:hover::before {
 /* contact now about page */
 .contact-now {
     padding-top: 3.64vw;
-    padding-bottom: 20.5vw;
+    padding-bottom: 12.5vw;
 }
 
 .contact-now .container-fluid {
@@ -1182,7 +1187,7 @@ a.nav-link:hover::before {
 
 .contact-now-box a {
     font-family: HurmeGeometricSans3;
-    pointer-events: none;
+    /* pointer-events: none; */
     font-size: 1.56vw;
     letter-spacing: 0.39vw;
     color: #006FF9;
@@ -1584,20 +1589,27 @@ input[type=number]::-webkit-inner-spin-button {
       background-color: #e51c23;
   }
 
+  .carousel-fade .carousel-item{
+      transition: none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+}
+.project-heading{
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
 
-  /* /page :-moz-loading */
-  #test{
-      text-align: center;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 100%;
-      background-color: white;
-      z-index: 5;
-      transition: 2s linear;
+@-webkit-keyframes example {
+    from {display: none;}
+    to {display: block;}
   }
-  #test img{
-      transform: translateY(40vh);
-      visibility: visible;
+  
+  /* Standard syntax */
+  @keyframes example {
+    from {display: none;}
+    to {display: block;}
   }
