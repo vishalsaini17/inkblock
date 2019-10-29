@@ -161,7 +161,7 @@
                     name="message_html" required></textarea>
                 </div>
                 <div class="col-12 form-group contact-form-btn pt-2">
-                  <button class="btn btn-primary btn-round" id="form-btn">SUBMIT</button>
+                  <button class="btn btn-primary btn-round form-button" id="form-btn">SUBMIT</button>
                 </div>
                 <div class="col-12 form-group contact-form-btn mt-4">
                   <a href="javascript:;">contact@inkblockstudio.com</a>

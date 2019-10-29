@@ -64,7 +64,7 @@
                         </div>
 
 
-                        <div data-name="Mirah Belle Naturals" alise="Packginng" class="carousel-item my-slide " data-index="">
+                        <div data-name="Mirah Belle Naturals" alise="Packaging" class="carousel-item my-slide " data-index="">
                               <section class="project-detail pb-0">
                                     <div class="my-container">
                                        <div class="row">                                                       

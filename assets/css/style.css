@@ -152,7 +152,11 @@ ul {
 }
 
 .btn-round {
-    border-radius: 19px;
+    border-radius: 1.5vw !important;
+    -webkit-border-radius: 1.5vw !important;
+    -moz-border-radius: 1.5vw !important;
+    -ms-border-radius: 1.5vw !important;
+    -o-border-radius: 1.5vw !important;
 }
 
 .btn-primary {
@@ -1195,6 +1199,7 @@ a.nav-link:hover::before {
     opacity: 1;
     font-weight: 700;
     position: relative;
+    text-decoration: none;
 }
 
 .contact-now-box a::after {
@@ -1235,6 +1240,9 @@ a.nav-link:hover::before {
     /* background: red; */
 }
 
+.form-button{
+    padding: 0.6vw 1.9vw;
+}
 /* project details */
 section.project-detail {
     padding-top: 3vw;
