@@ -4,7 +4,3 @@ RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
-
-
-RewriteCond %{HTTP_HOST} ^inkblockstudio.com/
-RewriteRule (.*) http://www.inkblockstudio.com//$1 [R=301,L]
