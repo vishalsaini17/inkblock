@@ -36,17 +36,11 @@ $(document).ready(function () {
     var navHeight = $('.nav-height').outerHeight(true);
     // var allow = (scroll >= 111)? true : false;
     if (scroll > navHeight) {
-      console.log('insideheight' + scroll + position);
-
       if ((scroll > position)) {
-        console.log('insideposition' + scroll + position);
-
         // console.log('scrollDown');
         $(".main-navbar").addClass("hide-navbar");
       }
       else {
-        console.log('insideelse');
-
         //  console.log('scrollUp');
         $(".main-navbar").removeClass("hide-navbar");
       }
@@ -210,6 +204,10 @@ $(document).ready(function () {
     $('.nav-link').parent().removeClass('active');
     $(this).parent().addClass('active');
   })
+
+  if($("#creative-heading").length){
+    $(window).scrollTop(0);
+  }
 
 
   // on scroll
@@ -542,34 +540,28 @@ if ($('#project_content').length) {
 }
 
 // one page of help section
-$('.help-link').click(function () {
-  var current_help_index = $(this).attr('data-index');
-
-  localStorage.setItem("current_help_index", current_help_index);
+$('.help-link').click(function(){
+  var current_help_index=$(this).attr('data-index');
+localStorage.setItem("current_help_index", current_help_index);
 });
-if (localStorage.getItem("current_help_index")) {
-  var current_help_index = localStorage.getItem("current_help_index");
-  debugger
-  $('.do-part[data-index=' + current_help_index + ']').addClass('block');
-  debugger
+if(localStorage.getItem("current_help_index")){
+var current_help_index=localStorage.getItem("current_help_index");
+$('.do-part[data-index='+ current_help_index+']').addClass('block');
 }
-$('.design-current').click(function () {
-  $('.do-part[data-index=0]').addClass('block');
-  $('.do-part[data-index=1]').removeClass('block');
-  $('.do-part[data-index=2]').removeClass('block');
-  debugger
+$('.design-current').click(function(){
+$('.do-part[data-index=0]').addClass('block');
+$('.do-part[data-index=1]').removeClass('block');
+$('.do-part[data-index=2]').removeClass('block');
 });
-$('.brand-current').click(function () {
-  $('.do-part[data-index=1]').addClass('block');
-  $('.do-part[data-index=0]').removeClass('block');
-  $('.do-part[data-index=2]').removeClass('block');
-  debugger
+$('.brand-current').click(function(){
+$('.do-part[data-index=1]').addClass('block');
+$('.do-part[data-index=0]').removeClass('block');
+$('.do-part[data-index=2]').removeClass('block');
 });
-$('.digital-current').click(function () {
-  $('.do-part[data-index=2]').addClass('block');
-  $('.do-part[data-index=1]').removeClass('block');
-  $('.do-part[data-index=0]').removeClass('block');
-  debugger
+$('.digital-current').click(function(){
+$('.do-part[data-index=2]').addClass('block');
+$('.do-part[data-index=1]').removeClass('block');
+$('.do-part[data-index=0]').removeClass('block');
 });
 
 // projects page dynamic code

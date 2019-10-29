@@ -39,8 +39,7 @@
             <div class="col-12 wwa-right d-flex align-items-center pr-0">
               <div class="col-12 px-0">
                 <h3>Who we are...</h3>
-                <p><span> Ink Block studio </span> is an India based creative design agency built by design enthusiast
-                  youngsters with the main focus to help out our customer in their business development.</p>
+                <p><span> Ink Block Studio  </span>is an India based creative design agency built by experienced design enthusiasts with the main focus in helping you grow your brand.</p>
                     <a href="about.php" class="btn btn-round btn-outline-light">Read more</a>
               </div>
             </div>
@@ -94,9 +93,9 @@
         <div class="work-wrapper d-flex">
           <ul class="list-unstyled work-list">
             <li><a href="projects.php" class="projects-link" data-name='iWheels' alise='UX/UI' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
-            <li><a href="projects.php" class="projects-link" data-name='Global Connectors' alise='UX/UI' data-index="1">Global Connectors <small>(UX/UI, WebDesign)</small></a></li>
+            <li><a href="projects.php" class="projects-link" data-name='Global Connectors' alise='UX/UI' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
             <li><a href="projects.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packging' data-index="2">Mirah Belle Naturals
-                <small>(Packging)</small></a></li>
+                <small>(Packaging)</small></a></li>
             <li><a href="projects.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
             </li>
             <li><a href="projects.php" class="projects-link" data-name='Transform '  alise='Booklet' data-index="4">Transform <small>(Booklet)</small></a></li>
