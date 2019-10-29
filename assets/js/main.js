@@ -205,9 +205,22 @@ $(document).ready(function () {
     $(this).parent().addClass('active');
   })
 
-  if($("#creative-heading").length){
+  
+  $(".home-scroll").click(function () {
+    debugger
+    // setTimeout(function(){ 
+  // }, 3000);
+  // window.onload = function(){
     $(window).scrollTop(0);
-  }
+    setTimeout(function(){
+        alert("Hello");
+    }, 700);
+//  };
+            setTimeout(function () {
+              alert('page is loaded and 1 minute has passed');   
+          }, 700);
+
+  });
 
 
   // on scroll

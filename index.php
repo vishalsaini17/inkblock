@@ -92,13 +92,13 @@
       <div class="container-fluid">
         <div class="work-wrapper d-flex">
           <ul class="list-unstyled work-list">
-            <li><a href="projects.php" class="projects-link" data-name='iWheels' alise='UX/UI' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
-            <li><a href="projects.php" class="projects-link" data-name='Global Connectors' alise='UX/UI' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
-            <li><a href="projects.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packging' data-index="2">Mirah Belle Naturals
+            <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
+            <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
+            <li><a href="project.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packging' data-index="2">Mirah Belle Naturals
                 <small>(Packaging)</small></a></li>
-            <li><a href="projects.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
+            <li><a href="project.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
             </li>
-            <li><a href="projects.php" class="projects-link" data-name='Transform '  alise='Booklet' data-index="4">Transform <small>(Booklet)</small></a></li>
+            <li><a href="project.php" class="projects-link" data-name='Transform '  alise='Booklet' data-index="4">Transform <small>(Booklet)</small></a></li>
           </ul>
 
           <div class="work-images-list">
@@ -161,7 +161,7 @@
                     name="message_html" required></textarea>
                 </div>
                 <div class="col-12 form-group contact-form-btn pt-2">
-                  <button class="btn btn-primary btn-round" id="form-btn">SUBMIT</button>
+                  <button class="btn btn-primary btn-round form-button" id="form-btn">SUBMIT</button>
                 </div>
                 <div class="col-12 form-group contact-form-btn mt-4">
                   <a href="javascript:;">contact@inkblockstudio.com</a>
