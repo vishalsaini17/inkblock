@@ -7,7 +7,7 @@
       </a>
       <div class="col px-0">
         <ul class="nav justify-content-end">
-          <li class="home-scroll"><a href="index.php#creative-section" class="nav-link" data-name="Home"></a>
+          <li class="home-scroll"><a href="index.php#creativity" class="nav-link" data-name="Home"></a>
           </li>
           <li><a href="index.php#work" onclick="smoothScroll($('#work').offset().top)" class="nav-link"
               data-name="WORK"></a>
