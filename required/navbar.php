@@ -1,7 +1,7 @@
 <div class="nav-height"></div>
   <nav class="main-navbar nav-height navbar">
     <div class="container-fluid">
-      <a href="index.php" class="navbar-brand home-scroll mx-0">
+      <a href="index.php#creativity" class="navbar-brand home-scroll mx-0">
         <img class="nav-logo" src="assets/img/logo-nav.svg" alt="inkBlock">
         
       </a>
