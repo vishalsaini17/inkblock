@@ -3,7 +3,7 @@
 <?php require "required/head-links.php" ?>
 
 
-<body class="indicator-true">
+<body class="indicator-true" id="creativity">
 
 
 <div class="page-indicator">
