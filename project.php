@@ -1,8 +1,6 @@
 <?php require "required/head-links.php" ?>
 <?php require "required/navbar.php" ?>
-<div id="test">
-   <img src="favicon.ico" alt="">
-</div>
+
    <div class="body-wrapper test" >
       <section class="project-detail pb-0">
          <div class="my-container">
