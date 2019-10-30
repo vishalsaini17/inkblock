@@ -94,7 +94,7 @@
           <ul class="list-unstyled work-list">
             <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
             <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packging' data-index="2">Mirah Belle Naturals
+            <li><a href="project.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packaging' data-index="2">Mirah Belle Naturals
                 <small>(Packaging)</small></a></li>
             <li><a href="project.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
             </li>

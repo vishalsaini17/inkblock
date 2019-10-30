@@ -719,17 +719,25 @@ $('#project_content').on('slid.bs.carousel', function () {
   
 // }); 
 
-if($('.test').length){
-  $('#test').css('right',0);
-  $("img").on('load', function() {
-     console.log("image loaded correctly"); 
-     $('#test>img').css('visibility','hidden');
-    $('#test').css('right',100 +'%');
-    });
-    $('#test>img').css('visibility','hidden');
-    $('#test').css('right',100 +'%');
-}
+// if(document.readyState === "complete") {
+//     // Fully loaded!
+// }
+// else if(document.readyState === "interactive") {
+//     debugger
+//     $('.loding').css({"right":"0"});
+//       // DOM ready! Images, frames, and other subresources are still downloading.
+// }
+// else {
+//     // Loading still in progress.
+//     // To wait for it to complete, add "DOMContentLoaded" or "load" listeners.
 
-    // .on('error', function() { console.log("error loading image"); })
-    // .attr("src", $(originalImage).attr("src"))/
+//     window.addEventListener("DOMContentLoaded", () => {
+//         // DOM ready! Images, frames, and other subresources are still downloading.
+//     });
 
+//     window.addEventListener("load", () => {
+//         // Fully loaded!
+//         debugger
+//     $('.loding').css({"right":"100%"});
+//     });
+// }
