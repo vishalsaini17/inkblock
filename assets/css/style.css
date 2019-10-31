@@ -447,6 +447,12 @@ a.nav-link:hover::before {
     padding-right: 5.6vw;
     padding-left: 4vw;
 } */
+
+.what-we-padding a{
+    letter-spacing: 0;
+    padding: 0.5vw 1.2vw;
+}
+
 .who-we-are {
     padding-top: 1vw;
     padding-bottom: 2.36vw;
@@ -1622,19 +1628,22 @@ input[type=number]::-webkit-inner-spin-button {
     to {display: block;}
   }
 
-/* 
+
   .loding{
       position: fixed;
       top: 0;
       bottom: 0;
       left: 0;
-      right: 0;
-      background: blueviolet;
+      right: 100%;
+      background: white;
       z-index: 11;
       padding-top: 20%;
-      transition: all 0.5s ease-in-out;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-} */
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;     
+}
+.loding-icon{
+    display: none;
+}

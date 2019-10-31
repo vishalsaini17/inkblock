@@ -1,9 +1,10 @@
 <?php require "required/head-links.php" ?>
 <?php require "required/navbar.php" ?>
-<div id="test">
-   <img src="favicon.ico" alt="">
+
+<div class="loding text-center">
+   <img class='loding-icon' src="favicon.ico" alt="">
 </div>
-   <div class="body-wrapper test" >
+   <div class="body-wrapper " >
       <section class="project-detail pb-0">
          <div class="my-container">
             <div class="row">
@@ -104,7 +105,7 @@
                                                 <li><img src="projects/transform-2.jpg" alt="project name" class="w-100 img-fluid"></li>
                                                 <li><img src="projects/transform-3.jpg" alt="project name" class="w-100 img-fluid"></li>
                                                 <li><img src="projects/transform-4.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/transform-5.jpg" alt="project name" class="w-100 img-fluid"></li>
+                                                <li><img src="projects/transform-5.jpg" alt="project name" class="w-100 img-fluid last-img"></li>
                                              </ul>
                                           </div>
                                        </div>

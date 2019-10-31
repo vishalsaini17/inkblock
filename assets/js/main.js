@@ -719,25 +719,17 @@ $('#project_content').on('slid.bs.carousel', function () {
   
 // }); 
 
-// if(document.readyState === "complete") {
-//     // Fully loaded!
-// }
-// else if(document.readyState === "interactive") {
-//     debugger
-//     $('.loding').css({"right":"0"});
-//       // DOM ready! Images, frames, and other subresources are still downloading.
-// }
-// else {
-//     // Loading still in progress.
-//     // To wait for it to complete, add "DOMContentLoaded" or "load" listeners.
 
-//     window.addEventListener("DOMContentLoaded", () => {
-//         // DOM ready! Images, frames, and other subresources are still downloading.
-//     });
+debugger
+$('.loding').css({"right":0});
+ $('.loding-icon').css('display', 'inline-block') ;
+debugger
+if($('.project-detail').length){
+document.addEventListener("DOMContentLoaded", () => {
+  // DOM ready! Images, frames, and other subresources are still downloading.
+  $('.loding-icon').css('display','none');
+  $('.loding').css({"right":100+'%'});
+  debugger
+}); 
+}
 
-//     window.addEventListener("load", () => {
-//         // Fully loaded!
-//         debugger
-//     $('.loding').css({"right":"100%"});
-//     });
-// }
