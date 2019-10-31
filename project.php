@@ -1,7 +1,8 @@
 <?php require "required/head-links.php" ?>
 <?php require "required/navbar.php" ?>
 
-   <div class="body-wrapper test" >
+
+   <div class="body-wrapper " >
       <section class="project-detail pb-0">
          <div class="my-container">
             <div class="row">

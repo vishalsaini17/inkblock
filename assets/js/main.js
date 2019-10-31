@@ -741,3 +741,10 @@ $('#project_content').on('slid.bs.carousel', function () {
 //     $('.loding').css({"right":"100%"});
 //     });
 // }
+
+  
+    
+	
+    
+
+  
