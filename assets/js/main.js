@@ -719,17 +719,17 @@ $('#project_content').on('slid.bs.carousel', function () {
   
 // }); 
 
-if($('.project-detail').length){
+// if($('.project-detail').length){
 
-debugger
-$('.loding').css({"right":0});
- $('.loding-icon').css('display', 'inline-block') ;
-debugger
-$('.project-detail img').on("load", () => {
-  // DOM ready! Images, frames, and other subresources are still downloading.
-  $('.loding-icon').css('display','none');
-  $('.loding').css({"right":100+'%'});
-  debugger
-}); 
-}
+// debugger
+// $('.loding').css({"right":0});
+//  $('.loding-icon').css('display', 'inline-block') ;
+// debugger
+// $('.project-detail img').on("load", () => {
+//   // DOM ready! Images, frames, and other subresources are still downloading.
+//   $('.loding-icon').css('display','none');
+//   $('.loding').css({"right":100+'%'});
+//   debugger
+// }); 
+// }
 
