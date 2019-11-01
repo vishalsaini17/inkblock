@@ -719,6 +719,7 @@ $('#project_content').on('slid.bs.carousel', function () {
   
 // }); 
 
+if($('.project-detail').length){
 
 // $('.loding').css({"right":0});
 //  $('.loding-icon').css('display', 'inline-block') ;
@@ -743,4 +744,4 @@ window.addEventListener("load", () => {
   $('.loding').css({"right": '100%'});
   debugger
 }); 
-
+}
