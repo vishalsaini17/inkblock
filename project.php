@@ -124,15 +124,21 @@
             <div class="row justify-content-center all-projects-box align-items-center">
                <div class="col-lg-4 col-md-4 pb-3 text-center ">
                   <h4>Prev</h4>
+                  <div class="text-poistion">
                   <a  id="prev_project" class="prev-link prev_btn" href="#project_content" role="button" data-slide="prev" data-index=""></a>
+                  </div>
                </div>
                <div class="col-lg-4 col-md-4 pb-3 text-center all-projects-box-border">
                   <h4>Return to</h4>
+                  <div class="text-poistion">
                   <a href="index.php#work">All projects</a>
+                  </div>
                </div>
                <div class="col-lg-4 col-md-4 pb-3 text-center">
                   <h4>Next</h4>
+                  <div class="text-poistion">
                   <a  id="next_project" class="next-link next_btn" href="#project_content" role="button" data-slide="next" data-index=""></a>
+                  </div>
                </div>
             </div>
          </div>

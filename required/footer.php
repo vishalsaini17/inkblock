@@ -1,7 +1,7 @@
 
-    <footer class="main-footer">
+    <footer class="main-footer height d-flex">
       <div class="my-container">
-        <div class="row align-items-center height">
+        <div class="row">
           <div class="col ml-1">
             <a href="index.php#creativity" class="footer-logo-box home-scroll">
               <img src="assets/img/logo-dark.svg" alt="inkBlock" class="footer-logo">
@@ -11,7 +11,7 @@
           <div class="col text-right footer-text">
             <h5>Contact</h5>
             <div class="contact-footer">contact@inkblockstudio.com</div>
-            <div class="text-muted">(+91) 8861 3333 62 / 888 2424 955 / 798 201 5334</div>
+            <div class="text-muted">(+91) 96 4388 4399 / 888 2424 955 / 798 201 5334</div>
             <div class="text-muted">Gurugram, Haryana, India - 122001</div>
           </div>
         </div>

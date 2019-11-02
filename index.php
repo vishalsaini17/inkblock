@@ -17,7 +17,7 @@
 <div class="body-wrapper">
 
     <section class="section-hello " id="creative-section">
-      <div class="container-fluid">
+      <div class="container-fluid pl-2">
         <div class="row creativity">
           <div class="col-md-9 mt-3">
             <h1 id="creative-heading">
@@ -89,11 +89,11 @@
     </section>
 
     <section class="work-section " id="work">
-      <div class="container-fluid">
+      <div class="container-fluid pl-2">
         <div class="work-wrapper d-flex">
           <ul class="list-unstyled work-list">
-            <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
+            <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI App Design' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
+            <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI Web Design' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
             <li><a href="project.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packaging' data-index="2">Mirah Belle Naturals
                 <small>(Packaging)</small></a></li>
             <li><a href="project.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
@@ -136,7 +136,7 @@
     </section>
 
     <section class="contact-section d-flex align-items-center " id="contact">
-      <div class="container-fluid w-100">
+      <div class="container-fluid w-100 pl-2">
         <div class="row creativity align-items-center">
           <div class="col-12 col-md-5">
             <h4 class="say-hi">Say Hi!</h4>
@@ -161,7 +161,7 @@
                     name="message_html" required></textarea>
                 </div>
                 <div class="col-12 form-group contact-form-btn pt-2">
-                  <button class="btn btn-primary btn-round form-button" id="form-btn">SUBMIT</button>
+                  <button class="btn btn-primary btn-round" id="form-btn">SUBMIT</button>
                 </div>
                 <div class="col-12 form-group contact-form-btn mt-4">
                   <a href="javascript:;">contact@inkblockstudio.com</a>

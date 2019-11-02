@@ -91,7 +91,7 @@
                  <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 do-box-content">
                        <h4>
-                          Brand should be to be able to speak with the audience, to make it stronger and long lasting we establish a relation among the products of a brand
+                       Brand should be to be able to speak with the audience, to make it stronger and long lasting we establish a relation among the products of a brand
                        </h4>
                        <p>
                           A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well. <span>~ Jeff Bezos</span> 

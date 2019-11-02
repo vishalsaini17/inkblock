@@ -313,7 +313,7 @@ a.nav-link:hover::before {
     /* top: 280px; */
     z-index: 1;
     display: none;
-    left: 4.1vw;
+    left: 4.34vw;
     /* transform: translateY(calc(-50% - 6vw )); */
     /* left: 55px; */
     /* transform: translateX(125%); */
@@ -332,7 +332,13 @@ a.nav-link:hover::before {
     border-radius: 50%;
     transition: transform,opacity 0.3s;
     transform: scale(0.5);
-    left: -0.34vw;
+    /*left: -0.34vw;
+    */-webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    margin-left: -0.4vw;
 }
 
 /* .hover{
@@ -924,7 +930,7 @@ a.nav-link:hover::before {
 .contact-footer{
     letter-spacing: 1.1px;
     font-weight: 600;
-    font-size: 1.45vw;
+    font-size: 1.16vw;
 }
 
 .footer-logo-box {
@@ -944,7 +950,7 @@ a.nav-link:hover::before {
     color: #bbb !important;
 }
 
-.main-footer .height {
+.main-footer.height {
     min-height: 23.5vw;
 }
 
@@ -1099,6 +1105,15 @@ a.nav-link:hover::before {
     box-shadow: 0px 8px 30px #00000047;
 }
 
+
+.team-box>div:hover .round-img-box>div{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .team-box .round-img-box {
     height: 13.65vw;
     width: 13.6vw;
@@ -1107,8 +1122,23 @@ a.nav-link:hover::before {
     border: 0.2vw solid white;
     margin: auto;
     /* background-color: black; */
-    background-size: cover;
     box-shadow: 0px 8px 30px #00000017;
+}
+
+.round-img-box>div{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 
 .team-box .founder-box {
@@ -1220,8 +1250,8 @@ a.nav-link:hover::before {
 
 /* footer */
 .footer-logo {
-    max-width: 8.3vw;
-    /* -webkit-width: 8.3vw; */
+    max-width: 9vw;
+    /* -webkit-width: 9vw; */
     width: 100%;
     height: auto;
 }
@@ -1232,7 +1262,7 @@ a.nav-link:hover::before {
     top: 0;
     left: 0;
     transition: all 0.3s ease-in-out;
-    max-width: 8.3vw;
+    max-width: 9vw;
 }
 
 .footer-logo-box:hover .white-footer-logo {
@@ -1246,9 +1276,9 @@ a.nav-link:hover::before {
     /* background: red; */
 }
 
-.form-button{
+/* .form-button{
     padding: 0.6vw 1.9vw;
-}
+} */
 /* project details */
 section.project-detail {
     padding-top: 3vw;
@@ -1297,8 +1327,18 @@ section.project-detail {
 }
 
 /* all projects project pages */
+.text-poistion{
+    position: absolute;
+    display: flex;
+    left: 20px;
+    right: 20px;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    bottom: 0;
+}
 .all-projects {
-    padding-bottom: 7.72vw;
+    padding-bottom: 10.72vw;
     padding-top: 8.7vw;
 }
 .all-projects-box>div{
@@ -1316,7 +1356,7 @@ section.project-detail {
     color: #D7D7D9;
     text-transform: uppercase;
     font-weight: 800;
-    padding-bottom: 0.81vw;
+    padding-bottom: 3vw;
     padding-top: 0.8vw;
 }
 
@@ -1328,6 +1368,7 @@ section.project-detail {
     font-weight: 300;
     line-height: 1;
     display: inline-block;
+    width: 80%;
 }
 
 .all-projects-box a:hover {
@@ -1489,7 +1530,7 @@ section.project-detail {
 }
 .do-box-content h4{
     font-family:HurmeGeometricSans3 ;
-    font-size: 1.67vw;
+    font-size: 1.43vw;
     color: #39393F;
     font-weight: 400;
     text-align: left;
