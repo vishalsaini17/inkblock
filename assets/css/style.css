@@ -882,6 +882,7 @@ a.nav-link:hover::before {
 
 .contact-img img {
     width: 30.5vw;
+    margin-bottom: 7vw;
 }
 
 .contact-form-btn a:hover{
@@ -1089,6 +1090,8 @@ a.nav-link:hover::before {
 .team-box>div {
     width: 18.3vw;
     padding: 2.4vw 1.34vw;
+    transition: all .3s;
+    /* transform: scale(1); */
 }
 
 .team-box>div:hover {
@@ -1097,6 +1100,7 @@ a.nav-link:hover::before {
 
 .team-box>div:hover .round-img-box {
     box-shadow: 0px 8px 30px #00000047;
+    /* transform: scale(1.1); */
 }
 
 .team-box .round-img-box {
@@ -1109,6 +1113,7 @@ a.nav-link:hover::before {
     /* background-color: black; */
     background-size: cover;
     box-shadow: 0px 8px 30px #00000017;
+    transition: all .3s;
 }
 
 .team-box .founder-box {
@@ -1635,15 +1640,15 @@ input[type=number]::-webkit-inner-spin-button {
       bottom: 0;
       left: 0;
       right: 100%;
-      background: white;
+      background: violet;
       z-index: 11;
-      transition: all 0.2s ease-in-out;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;     
+      padding-top: 20%;
+      transition: all 0.6s ease-in-out;
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;     
 }
-.loding-icon{
+/* .loding-icon{
     display: none;
-    transform: translateY(40vh);
-}
+} */
