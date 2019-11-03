@@ -719,29 +719,35 @@ $('#project_content').on('slid.bs.carousel', function () {
   
 // }); 
 
-if($('.project-detail').length){
 
-// $('.loding').css({"right":0});
-//  $('.loding-icon').css('display', 'inline-block') ;
-// debugger
-// if($('.project-detail').length){
-window.addEventListener("DOMContentLoaded", () => {
-  // DOM ready! Images, frames, and other subresources are still downloading.
-  $('.loding').css({"right": '0'});
-  debugger
-}); 
-// $(window).load(function() {
-//  // executes when complete page is fully loaded, including all frames, objects and images
-//  $('.loding-icon').css('display','none');
-//  $('.loding').css({"right": '100% !important'});
-//  debugger
+
+
+// $('.work-list li>a').on('click', function (e) {
+//   debugger
+//   $('.loding').css({"right": '0'});
+//   // $('.loding').css({"transition": 'all 0.5s ease-in-out'});
 // });
-// }
 
-window.addEventListener("load", () => {
-  // DOM ready! Images, frames, and other subresources are still downloading.
-  $('.loding-icon').css('display','none');
-  $('.loding').css({"right": '100%'});
-  debugger
-}); 
-}
+
+// if($('.project-detail').length && $('.loding').css({"right": '0'}) ){
+//   debugger
+
+// window.addEventListener("DOMContentLoaded", () => {
+//   // DOM ready! Images, frames, and other subresources are still downloading.
+//   $('.loding').css({"right": '0'});
+//   debugger
+// }); 
+// // $(window).load(function() {
+// //  // executes when complete page is fully loaded, including all frames, objects and images
+// //  $('.loding-icon').css('display','none');
+// //  $('.loding').css({"right": '100% !important'});
+// //  debugger
+// // });
+// // }
+
+// window.addEventListener("load", () => {
+//   $('.loding-icon').css('display','none');
+//   $('.loding').css({"right": '100%'});
+//   debugger
+// }); 
+// }
