@@ -92,8 +92,8 @@
       <div class="container-fluid pl-2">
         <div class="work-wrapper d-flex">
           <ul class="list-unstyled work-list">
-            <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI App Design' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI Web Design' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
+            <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI, App Design' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
+            <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI, Web Design' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
             <li><a href="project.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packaging' data-index="2">Mirah Belle Naturals
                 <small>(Packaging)</small></a></li>
             <li><a href="project.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="col-12 form-group contact-form-btn mt-4">
                   <a href="javascript:;">contact@inkblockstudio.com</a>
-                  <p class="mt-2">(+91) 964 3884 399</p>
+                  <p class="mt-2">(+91) 8861 3333 62</p>
                 </div>
               </div>
             </form>

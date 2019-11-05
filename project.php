@@ -25,7 +25,7 @@
 
                <div class="col-12 mb-5  carousel slide carousel-fade" id="project_content" data-ride="carousel">
                   <ul class="list-unstyled carousel-inner" >
-                        <div data-name="iWheels" alise="UX/UI" class="carousel-item my-slide" data-index="">
+                        <div data-name="iWheels" alise="UX/UI, App Design" class="carousel-item my-slide" data-index="">
                               <section class="project-detail pb-0">
                                     <div class="my-container">
                                        <div class="row">
@@ -46,7 +46,7 @@
                         </div>
 
 
-                        <div data-name="Global Connectors" alise="UX/UI" class="carousel-item my-slide " data-index="">
+                        <div data-name="Global Connectors" alise="UX/UI, Web Design" class="carousel-item my-slide " data-index="">
                               <section class="project-detail pb-0">
                                     <div class="my-container">
                                        <div class="row">                                          
