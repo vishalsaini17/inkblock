@@ -1,6 +1,6 @@
 
-
-<?php require "required/head-links.php" ?>
+<?php require 'database/conn.php'; ?>
+<?php require "required/head-links.php" ;?>
 
 
 <body class="indicator-true" id="creativity">
@@ -92,43 +92,42 @@
       <div class="container-fluid pl-2">
         <div class="work-wrapper d-flex">
           <ul class="list-unstyled work-list">
-            <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI, App Design' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI, Web Design' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packaging' data-index="2">Mirah Belle Naturals
-                <small>(Packaging)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
-            </li>
-            <li><a href="project.php" class="projects-link" data-name='Transform '  alise='Booklet' data-index="4">Transform <small>(Booklet)</small></a></li>
+          <?php
+          if (mysqli_num_rows($result) > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+               $project_name=$row['project_name']; 
+               $catagory_name=$row['category_name']; 
+               $index=$row['index']; 
+          ?>
+            <li><a href="project.php" class="projects-link" data-name='<?php echo $project_name ?>' alise='<?php echo $catagory_name ?>' data-index=<?php echo $index ?>><?php echo $project_name ?> <small><?php echo $catagory_name ?></small></a></li>
+
+            <?php
+            }
+            ?>
           </ul>
 
+          <?php
+           while($row = mysqli_fetch_assoc($resulti)) {
+            $cover_image=$row['cover_image']; 
+       ?>
+          
           <div class="work-images-list">
             <div class="work-item__image">
               <div class="mask">
-                <div class="image-container" style="background-image: url('projects/mockup-01.jpg')"></div>
+                <div class="image-container" style='background-image: url("projects/<?php echo $cover_image ?>")'></div>
               </div>
             </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/Global-Connectors-cover.png')">
-                </div>
-              </div>
-            </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/bamboo-cover.jpg')"></div>
-              </div>
-            </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/Cyber-Sun-logo-project-Cover.jpg')">
-                </div>
-              </div>
-            </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/transform-cover.jpg')"></div>
-              </div>
-            </div>
+
+             <?php
+            }
+            ?>
+          
+            <?php
+          } else {
+              echo "0 results";
+          }
+          ?>
           </div>
 
         </div>

@@ -765,3 +765,9 @@ $('#project_content').on('slid.bs.carousel', function () {
 //   debugger
 // }); 
 // }
+
+
+$('.next-link').click(function(){
+  var d=$(this).attr('data-name');
+debugger
+});
