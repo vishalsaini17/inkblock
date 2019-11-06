@@ -57,7 +57,7 @@
         <h3>How we help</h3>
         <div class="d-flex wwd-row justify-content-between pl-1">
           <div class="mt-5 mt-lg-4">
-            <a href="help.php" class=" text-decoration-none help-link" data-index='0'>
+            <a href="help.php#design" class=" text-decoration-none help-link" data-index='0'>
               <div class="wwd-card wwd-card-blue has-circle">
                 <div class="text">UI/UX Design</div>
                 <div class="shape shape-blue"></div>
@@ -65,7 +65,7 @@
             </a>
           </div>
           <div class="mt-5 mt-lg-4">
-            <a href="help.php" class="d-inline-block text-decoration-none help-link" data-index='1'>
+            <a href="help.php#brand" class="d-inline-block text-decoration-none help-link" data-index='1'>
               <div class="wwd-card wwd-card-orange">
                 <div class="text">Brand Identity</div>
                 <div class="shape shape-orange"></div>
@@ -75,7 +75,7 @@
 
           </div>
           <div class="mt-5 mt-lg-4">
-            <a href="help.php" class="d-inline-block text-decoration-none help-link" data-index='2'>
+            <a href="help.php#digital" class="d-inline-block text-decoration-none help-link" data-index='2'>
               <div class="wwd-card wwd-card-purple has-semi-circle">
                 <div class="text">Digital Media</div>
                 <div class="shape shape-purple"></div>

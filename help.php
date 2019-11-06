@@ -11,13 +11,13 @@
                      <div class="col-lg-2  col-md-2 col-sm-2 col-2">
                         <div class="row">
                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                              <a class="do-name-links text-decoration-none do-name-bl-color do-name-same-links design-current" href="#design">UI/UX Design</a>
+                              <a class="do-name-links text-decoration-none do-name-bl-color do-name-same-links design-current" hash='help.php#design' href="help.php">UI/UX Design</a>
                            </div>
                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                              <a class="do-name-links text-decoration-none do-name-og-link-hover brand-current" href="#brand">Brand Identity</a>
+                              <a class="do-name-links text-decoration-none do-name-og-link-hover brand-current" hash='brand' href="help.php#brand">Brand Identity</a>
                            </div>
                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                              <a class="do-name-links text-decoration-none do-name-pl-link-hover digital-current" href="#digital">Digital media</a>
+                              <a class="do-name-links text-decoration-none do-name-pl-link-hover digital-current" hash='digital' href="help.php#digital">Digital media</a>
                            </div>
                         </div>
                      </div>
@@ -67,13 +67,13 @@
                     <div class="col-lg-2 col-md-2 col-sm-2 col-2">
                       <div class="row">
                          <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                            <a class="do-name-links text-decoration-none do-name-bl-link-hover design-current" href="#design">UI/UX Design</a>
+                            <a class="do-name-links text-decoration-none do-name-bl-link-hover design-current" hash='design' href="help.php#design">UI/UX Design</a>
                           </div>
                          <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                            <a class="do-name-links text-decoration-none do-name-og-color do-name-same-links brand-current" href="#brand">Brand Identity</a>
+                            <a class="do-name-links text-decoration-none do-name-og-color do-name-same-links brand-current" hash='brand' href="help.php#brand">Brand Identity</a>
                           </div>
                          <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                            <a class="do-name-links text-decoration-none  do-name-pl-link-hover digital-current" href="#digital">Digital media</a>
+                            <a class="do-name-links text-decoration-none  do-name-pl-link-hover digital-current" hash='digital' href="help.php#digital">Digital media</a>
                           </div>
                       </div>   
                     </div>
@@ -123,13 +123,13 @@
                   <div class="col-lg-2  col-md-2 col-sm-2 col-2">
                      <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                           <a class="do-name-links text-decoration-none  do-name-bl-link-hover design-current" href="#design">UI/UX Design</a>
+                           <a class="do-name-links text-decoration-none  do-name-bl-link-hover design-current" hash='design' href="help.php#design">UI/UX Design</a>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                           <a class="do-name-links text-decoration-none do-name-og-link-hover brand-current " href="#brand">Brand Identity</a>
+                           <a class="do-name-links text-decoration-none do-name-og-link-hover brand-current " hash='brand' href="help.php#brand">Brand Identity</a>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                           <a class="do-name-links text-decoration-none  do-name-pl-color do-name-same-links digital-current" href="#digital">Digital media</a>
+                           <a class="do-name-links text-decoration-none  do-name-pl-color do-name-same-links digital-current" hash='digital' href="help.php#digital">Digital media</a>
                         </div>
                      </div>
                   </div>

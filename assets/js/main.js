@@ -550,21 +550,35 @@ if(localStorage.getItem("current_help_index")){
 var current_help_index=localStorage.getItem("current_help_index");
 $('.do-part[data-index='+ current_help_index+']').addClass('block');
 }
-$('.design-current').click(function(){
+
+// $('.do-name-links').click(function(){
+   
+//    var sethash= $(this).attr('hash');
+//   //  $(this).attr('href','help#'+sethash);
+//    location.hash = sethash ;
+//    debugger
+// });
+
+var hashvalue=location.hash;
+if(hashvalue == '#design'){
+  debugger
 $('.do-part[data-index=0]').addClass('block');
 $('.do-part[data-index=1]').removeClass('block');
 $('.do-part[data-index=2]').removeClass('block');
-});
-$('.brand-current').click(function(){
+}
+else if(hashvalue == '#brand'){
+  debugger
 $('.do-part[data-index=1]').addClass('block');
 $('.do-part[data-index=0]').removeClass('block');
 $('.do-part[data-index=2]').removeClass('block');
-});
-$('.digital-current').click(function(){
+}
+
+else if(hashvalue == '#digital'){
+  debugger
 $('.do-part[data-index=2]').addClass('block');
 $('.do-part[data-index=1]').removeClass('block');
 $('.do-part[data-index=0]').removeClass('block');
-});
+}
 
 // projects page dynamic code
 // project slider btn
