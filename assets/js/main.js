@@ -542,28 +542,28 @@ if ($('#project_content').length) {
 }
 
 // one page of help section
-$('.help-link').click(function(){
-  var current_help_index=$(this).attr('data-index');
-localStorage.setItem("current_help_index", current_help_index);
+$('.help-link').click(function () {
+  var current_help_index = $(this).attr('data-index');
+  localStorage.setItem("current_help_index", current_help_index);
 });
-if(localStorage.getItem("current_help_index")){
-var current_help_index=localStorage.getItem("current_help_index");
-$('.do-part[data-index='+ current_help_index+']').addClass('block');
+if (localStorage.getItem("current_help_index")) {
+  var current_help_index = localStorage.getItem("current_help_index");
+  $('.do-part[data-index=' + current_help_index + ']').addClass('block');
 }
-$('.design-current').click(function(){
-$('.do-part[data-index=0]').addClass('block');
-$('.do-part[data-index=1]').removeClass('block');
-$('.do-part[data-index=2]').removeClass('block');
+$('.design-current').click(function () {
+  $('.do-part[data-index=0]').addClass('block');
+  $('.do-part[data-index=1]').removeClass('block');
+  $('.do-part[data-index=2]').removeClass('block');
 });
-$('.brand-current').click(function(){
-$('.do-part[data-index=1]').addClass('block');
-$('.do-part[data-index=0]').removeClass('block');
-$('.do-part[data-index=2]').removeClass('block');
+$('.brand-current').click(function () {
+  $('.do-part[data-index=1]').addClass('block');
+  $('.do-part[data-index=0]').removeClass('block');
+  $('.do-part[data-index=2]').removeClass('block');
 });
-$('.digital-current').click(function(){
-$('.do-part[data-index=2]').addClass('block');
-$('.do-part[data-index=1]').removeClass('block');
-$('.do-part[data-index=0]').removeClass('block');
+$('.digital-current').click(function () {
+  $('.do-part[data-index=2]').addClass('block');
+  $('.do-part[data-index=1]').removeClass('block');
+  $('.do-part[data-index=0]').removeClass('block');
 });
 
 // projects page dynamic code
@@ -667,46 +667,46 @@ if (localStorage.getItem("project_name") && localStorage.getItem("alise_name") &
     // prev btn code project page
 
     if ($('.prev-link').length) {
-        $('.prev-link').click(function () {
+      $('.prev-link').click(function () {
 
-          var current_index = Number($(this).attr('data-index'));
-          if (current_index < 0) {
-            current_index = 4;
-          }
-          var project_name = $('.carousel-item[data-index =' + current_index + ']').attr('data-name');
-          var alise_name = $('.carousel-item[data-index =' + current_index + ']').attr('alise');
-          var next_index = current_index + 1;
-          var prev_index = current_index - 1;
-          if (current_index == 0) {
-            prev_index = 4;
-          }
-          if (current_index == 4) {
-            next_index = 0;
-          }
-          var project_next = $('.carousel-item[data-index =' + next_index + ']').attr('data-name');
-          var project_prev = $('.carousel-item[data-index =' + prev_index + ']').attr('data-name');
-          $('.next-link').attr('data-index', next_index);
-          $('.prev-link').attr('data-index', prev_index);
-          document.getElementById('alise_name').innerText = alise_name,
-            document.getElementById('project_name').innerText = project_name
-          document.getElementById('next_project').innerText = project_next;
-          document.getElementById('prev_project').innerText = project_prev;
-          current_index = current_index - 1;
-          $(this).attr('data-index', current_index);
+        var current_index = Number($(this).attr('data-index'));
+        if (current_index < 0) {
+          current_index = 4;
+        }
+        var project_name = $('.carousel-item[data-index =' + current_index + ']').attr('data-name');
+        var alise_name = $('.carousel-item[data-index =' + current_index + ']').attr('alise');
+        var next_index = current_index + 1;
+        var prev_index = current_index - 1;
+        if (current_index == 0) {
+          prev_index = 4;
+        }
+        if (current_index == 4) {
+          next_index = 0;
+        }
+        var project_next = $('.carousel-item[data-index =' + next_index + ']').attr('data-name');
+        var project_prev = $('.carousel-item[data-index =' + prev_index + ']').attr('data-name');
+        $('.next-link').attr('data-index', next_index);
+        $('.prev-link').attr('data-index', prev_index);
+        document.getElementById('alise_name').innerText = alise_name,
+          document.getElementById('project_name').innerText = project_name
+        document.getElementById('next_project').innerText = project_next;
+        document.getElementById('prev_project').innerText = project_prev;
+        current_index = current_index - 1;
+        $(this).attr('data-index', current_index);
 
-        });
+      });
     }
   }
 }
 
 $('#project_content').on('slide.bs.carousel', function () {
-  $('.prev-link').css("pointer-events","none");
-  $('.next-link').css("pointer-events","none");
+  $('.prev-link').css("pointer-events", "none");
+  $('.next-link').css("pointer-events", "none");
 })
 
 $('#project_content').on('slid.bs.carousel', function () {
-  $('.prev-link').css("pointer-events","inherit");
-  $('.next-link').css("pointer-events","inherit");
+  $('.prev-link').css("pointer-events", "inherit");
+  $('.next-link').css("pointer-events", "inherit");
 })
 // page loading
 // $(document).ready(function() { 
@@ -714,9 +714,9 @@ $('#project_content').on('slid.bs.carousel', function () {
 //     $('#test>img').css('visibility','hidden');
 //     }, 100);
 //     $('#test').css('right',100 +'%');
-    
 
-  
+
+
 // }); 
 
 
@@ -724,30 +724,35 @@ $('#project_content').on('slid.bs.carousel', function () {
 
 // $('.work-list li>a').on('click', function (e) {
 //   debugger
-//   $('.loding').css({"right": '0'});
 //   // $('.loding').css({"transition": 'all 0.5s ease-in-out'});
 // });
 
+$(document).ready(function(){
 
-// if($('.project-detail').length && $('.loding').css({"right": '0'}) ){
-//   debugger
+  $('.loding').css({"right": '0','visibility':'visible'});
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   // DOM ready! Images, frames, and other subresources are still downloading.
-//   $('.loding').css({"right": '0'});
-//   debugger
-// }); 
-// // $(window).load(function() {
-// //  // executes when complete page is fully loaded, including all frames, objects and images
-// //  $('.loding-icon').css('display','none');
-// //  $('.loding').css({"right": '100% !important'});
-// //  debugger
-// // });
-// // }
-
-// window.addEventListener("load", () => {
-//   $('.loding-icon').css('display','none');
-//   $('.loding').css({"right": '100%'});
-//   debugger
-// }); 
-// }
+  var image = new Image();
+  
+  
+  $('.loding').on( 'transitionend', function() {
+    
+    image.src = "projects/mockup-06.jpg";
+  
+    image.onload = function () {
+      //do something...
+      $('.loding').css({ "right": '100%','visibility':'hidden' });
+      // $('.loding-icon').css('display', 'none');
+    }
+    // image.onerror = function () {
+    //   //do something else...
+    //   $('.loding').css({"right": '0'});
+    // }
+    
+  
+    // // window.addEventListener("load", () => {
+    //   $('.loding-icon').css('display', 'none');
+    //   $('.loding').css({ "right": '100%' });
+    // // });
+   });
+  
+})

@@ -14,6 +14,9 @@
 
 <?php require "required/navbar.php" ?>
 
+<div class="loding text-center">
+     <img class='loding-icon' src="favicon.ico" alt="">
+</div>
 <div class="body-wrapper">
 
     <section class="section-hello " id="creative-section">
@@ -165,7 +168,7 @@
                 </div>
                 <div class="col-12 form-group contact-form-btn mt-4">
                   <a href="javascript:;">contact@inkblockstudio.com</a>
-                  <p class="mt-2">(+91) 964 3884 399</p>
+                  <p class="mt-2">(+91) 8861 3333 62</p>
                 </div>
               </div>
             </form>
