@@ -29,17 +29,13 @@
                 <div class="col-12 mb-5  carousel slide carousel-fade" id="project_content" data-ride="carousel">
                     <ul class="list-unstyled carousel-inner">
                         <?php                    
-                           $sql = "SELECT project_name,category_name,cover_image,project_image FROM projects";
-                           $result = mysqli_query($conn, $sql);
-
-                           if(mysqli_num_rows($result) > 0){
+                              if(mysqli_num_rows($result) > 0){
                               while($row = mysqli_fetch_assoc($result)){
                                  $project_name = $row['project_name'];
                                  $category_name = $row['category_name'];
-                                 // $cover_image = $row['cover_image'];
                                  $project_img =  $row['project_image'];
                                  $project_images = explode(",",$project_img);
-                            
+                                 $project_length = sizeof($project_images);
                            ?>
                         <div data-name="<?php echo $project_name ?>" alise="<?php echo $category_name ?>" class="carousel-item my-slide" data-index="">
                             <section class="project-detail pb-0">
@@ -48,7 +44,7 @@
                                         <div class="col-12 mb-5">
                                             <ul class="list-unstyled">
                                              <?php
-                                              for($i=0;$i<5;$i++){  ?>
+                                              for($i=0;$i<$project_length;$i++){  ?>
                                               <li><img src="projects/<?php echo $project_images[$i] ?>" alt="project name" class="w-100 img-fluid have"></li>
                                              <?PHP } ?>
                                             </ul>
@@ -62,75 +58,6 @@
                                  }
                               }
                         ?>
-
-                        <!-- 
-                        <div data-name="Global Connectors" alise="UX/UI" class="carousel-item my-slide " data-index="">
-                              <section class="project-detail pb-0">
-                                    <div class="my-container">
-                                       <div class="row">                                          
-                                          <div class="col-12 mb-5">
-                                             <ul class="list-unstyled">
-                                                <li><img src="projects/Global-Connectors-01.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/Global-Connectors-02.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/Global-Connectors-03.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/Global-Connectors-04.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/Global-Connectors-05.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </section>
-                        </div>
-
-
-                        <div data-name="Mirah Belle Naturals" alise="Packaging" class="carousel-item my-slide " data-index="">
-                              <section class="project-detail pb-0">
-                                    <div class="my-container">
-                                       <div class="row">                                                       
-                                          <div class="col-12 mb-5">
-                                             <ul class="list-unstyled">
-                                                <li><img src="projects/Mirah_Belle.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </section>
-                        </div>
-
-
-                        <div data-name="CyberSun Consulting" alise="Logo" class="carousel-item my-slide" data-index="">
-                              <section class="project-detail pb-0">
-                                    <div class="my-container">
-                                       <div class="row">                                         
-                                          <div class="col-12 mb-5">
-                                             <ul class="list-unstyled">
-                                                <li><img src="projects/Cyber-Sun.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </section>
-                        </div>
-
-
-                        <div data-name="Transform" alise="Booklet" class="carousel-item my-slide" data-index="">
-                              <section class="project-detail pb-0">
-                                    <div class="my-container">
-                                       <div class="row">                                         
-                                          <div class="col-12 mb-5">
-                                             <ul class="list-unstyled">
-                                                <li><img src="projects/transform-1.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/transform-2.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/transform-3.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/transform-4.jpg" alt="project name" class="w-100 img-fluid"></li>
-                                                <li><img src="projects/transform-5.jpg" alt="project name" class="w-100 img-fluid last-img"></li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </section>
-                        </div> -->
-
                     </ul>
                 </div>
             </div>

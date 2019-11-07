@@ -343,7 +343,8 @@ a.nav-link:hover::before {
 
 #down-slider .xslide .xslide-handle::before{
     content: "";
-    border: 0.1vw solid #1F2024;
+    /* border: 0.1vw solid #1F2024; */
+    border: 1px solid #1F2024;
     position: absolute;
     border-radius: 50%;
     left: -1px;
@@ -844,6 +845,8 @@ a.nav-link:hover::before {
 .contact-section {
     min-height: 720px;
     font-family: "HurmeGeometricSans3";
+    padding-top: 8vw;
+    padding-bottom: 8vw;
 }
 
 .say-hi {
@@ -900,6 +903,7 @@ a.nav-link:hover::before {
 
 .contact-img img {
     width: 30.5vw;
+    margin-bottom: 7vw;
 }
 
 .contact-form-btn a:hover{
@@ -1107,6 +1111,8 @@ a.nav-link:hover::before {
 .team-box>div {
     width: 18.3vw;
     padding: 2.4vw 1.34vw;
+    transition: all .3s;
+    /* transform: scale(1); */
 }
 
 .team-box>div:hover {
@@ -1115,17 +1121,18 @@ a.nav-link:hover::before {
 
 .team-box>div:hover .round-img-box {
     box-shadow: 0px 8px 30px #00000047;
+    /* transform: scale(1.1); */
 }
 
 
 .team-box>div:hover .round-img-box>div{
-    /* transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1); */
-    background-size: 110%;
-    background-repeat: no-repeat;
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
+    /* background-size: 110%;
+    background-repeat: no-repeat; */
 }
 
 .team-box .round-img-box {
@@ -1137,26 +1144,17 @@ a.nav-link:hover::before {
     margin: auto;
     /* background-color: black; */
     box-shadow: 0px 8px 30px #00000017;
+    transition: all .3s;
 }
 
 .round-img-box>div{
     background-size: cover;
-    background-position: center;
+    /* background-position: center center; */
     width: 100%;
     height: 100%;
-    background-size: 100%;
-    transition: background-size 0.3s ease-in-out;
-    /*transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s;
-    -webkit-transition: background-size 0.3s ease-in-out;
-    -moz-transition: background-size 0.3s ease-in-out;
-    -ms-transition: background-size 0.3s ease-in-out;
-    -o-transition: background-size 0.3s ease-in-out;
-        */
+    /* background-size: 100%; */
+    transition: all 0.6s ease;
+    transform: scale(0.99);
 }
 
 .team-box .founder-box {
@@ -1448,7 +1446,12 @@ section.project-detail {
     }
 }
 
-@media(min-width: 1367px) {}
+@media(min-width: 1367px) {
+    
+    #down-slider .xslide .xslide-handle::before{
+     border: 2px solid #1F2024;
+    }
+}
 
 
 /* do-project  css work do pages */
@@ -1669,9 +1672,9 @@ input[type=number]::-webkit-inner-spin-button {
       -ms-transition: none;
       -o-transition: none;
 }
-.project-heading{
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+/* .project-heading{
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s;
     animation-name: example;
     animation-duration: 4s;
 }
@@ -1681,11 +1684,11 @@ input[type=number]::-webkit-inner-spin-button {
     to {display: block;}
   }
   
-  /* Standard syntax */
+ 
   @keyframes example {
     from {display: none;}
     to {display: block;}
-  }
+  } */
 
 
   .loding{
@@ -1694,7 +1697,7 @@ input[type=number]::-webkit-inner-spin-button {
       bottom: 0;
       left: 0;
       right: 100%;
-      background: white;
+      background: #fff;
       z-index: 11;
       padding-top: 20%;
       transition: all 0.5s ease-in-out !important;

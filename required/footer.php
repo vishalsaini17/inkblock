@@ -3,7 +3,7 @@
       <div class="my-container">
         <div class="row">
           <div class="col ml-1">
-            <a href="index.php#creativity" class="footer-logo-box home-scroll">
+            <a href="index#creativity" class="footer-logo-box home-scroll">
               <img src="assets/img/logo-dark.svg" alt="inkBlock" class="footer-logo">
               <img src="assets/img/logo-white.svg" alt="inkBlock" class="white-footer-logo">
             </a>

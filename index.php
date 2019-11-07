@@ -1,6 +1,6 @@
 
-
-<?php require "required/head-links.php" ?>
+<?php require 'database/conn.php'; ?>
+<?php require "required/head-links.php" ;?>
 
 
 <body class="indicator-true" id="creativity">
@@ -60,7 +60,7 @@
         <h3>How we help</h3>
         <div class="d-flex wwd-row justify-content-between pl-1">
           <div class="mt-5 mt-lg-4">
-            <a href="help.php" class=" text-decoration-none help-link" data-index='0'>
+            <a href="help.php#design" class=" text-decoration-none help-link" data-index='0'>
               <div class="wwd-card wwd-card-blue has-circle">
                 <div class="text">UI/UX Design</div>
                 <div class="shape shape-blue"></div>
@@ -68,7 +68,7 @@
             </a>
           </div>
           <div class="mt-5 mt-lg-4">
-            <a href="help.php" class="d-inline-block text-decoration-none help-link" data-index='1'>
+            <a href="help.php#brand" class="d-inline-block text-decoration-none help-link" data-index='1'>
               <div class="wwd-card wwd-card-orange">
                 <div class="text">Brand Identity</div>
                 <div class="shape shape-orange"></div>
@@ -78,7 +78,7 @@
 
           </div>
           <div class="mt-5 mt-lg-4">
-            <a href="help.php" class="d-inline-block text-decoration-none help-link" data-index='2'>
+            <a href="help.php#digital" class="d-inline-block text-decoration-none help-link" data-index='2'>
               <div class="wwd-card wwd-card-purple has-semi-circle">
                 <div class="text">Digital Media</div>
                 <div class="shape shape-purple"></div>
@@ -95,43 +95,42 @@
       <div class="container-fluid pl-2">
         <div class="work-wrapper d-flex">
           <ul class="list-unstyled work-list">
-            <li><a href="project.php" class="projects-link" data-name='iWheels' alise='UX/UI App Design' data-index='0'>iWheels <small>(UX/UI, App Design)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='Global Connectors' alise='UX/UI Web Design' data-index="1">Global Connectors <small>(UX/UI, Web Design)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='Mirah Belle Naturals' alise='Packaging' data-index="2">Mirah Belle Naturals
-                <small>(Packaging)</small></a></li>
-            <li><a href="project.php" class="projects-link" data-name='CyberSun Consulting' alise='Logo' data-index="3">CyberSun Consulting <small>(Logo)</small></a>
-            </li>
-            <li><a href="project.php" class="projects-link" data-name='Transform '  alise='Booklet' data-index="4">Transform <small>(Booklet)</small></a></li>
+          <?php
+          if (mysqli_num_rows($result) > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+               $project_name=$row['project_name']; 
+               $catagory_name=$row['category_name']; 
+               $index=$row['index']; 
+          ?>
+            <li><a href="project.php" class="projects-link" data-name='<?php echo $project_name ?>' alise='<?php echo $catagory_name ?>' data-index=<?php echo $index ?>><?php echo $project_name ?> <small><?php echo $catagory_name ?></small></a></li>
+
+            <?php
+            }
+            ?>
           </ul>
 
+          <?php
+           while($row = mysqli_fetch_assoc($resulti)) {
+            $cover_image=$row['cover_image']; 
+       ?>
+          
           <div class="work-images-list">
             <div class="work-item__image">
               <div class="mask">
-                <div class="image-container" style="background-image: url('projects/mockup-01.jpg')"></div>
+                <div class="image-container" style='background-image: url("projects/<?php echo $cover_image ?>")'></div>
               </div>
             </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/Global-Connectors-cover.png')">
-                </div>
-              </div>
-            </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/bamboo-cover.jpg')"></div>
-              </div>
-            </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/Cyber-Sun-logo-project-Cover.jpg')">
-                </div>
-              </div>
-            </div>
-            <div class="work-item__image">
-              <div class="mask">
-                <div class="image-container" style="background-image: url('projects/transform-cover.jpg')"></div>
-              </div>
-            </div>
+
+             <?php
+            }
+            ?>
+          
+            <?php
+          } else {
+              echo "0 results";
+          }
+          ?>
           </div>
 
         </div>
