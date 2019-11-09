@@ -144,16 +144,38 @@
             <h4 class="say-hi">Say Hi!</h4>
             <p class="contact-subtitle">We are always excited to hear a new idea!</p>
 
-            <form action="#" class="col-12 col-lg-9 px-0 pt-4" id="contact-form" name="myForm">
+            <form action="#" class="col-12 col-lg-10 px-0 pt-4" id="contact-form" name="myForm">
               <div class="form-row contact-form">
                 <div class="col-12 col-md-6 form-group">
-                  <input type="text" class="form-control email-input" placeholder="email@example.com" name="from_email">
+                  <input type="number" class="form-control" placeholder="Your Name">
+                  <div class="invalid-tooltip">
+                      Enter Your name.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 form-group">
+                  <input type="text" class="form-control email-input" placeholder="Email" name="from_email">
                   <div class="invalid-tooltip">
                       Please enter valid email address.
                     </div>
                 </div>
                 <div class="col-12 col-md-6 form-group">
                   <input type="number" class="form-control phone-number" placeholder="+00 000-0000-000" name="phone_no" id="phone_no" >
+                  <div class="invalid-tooltip">
+                      Please enter valid phone number.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 form-group" data-toggle="dropdown">
+                  <div class="d-flex form-menu">
+                  <input type="text" class="form-control" placeholder="How did you find us">
+                  <i class="fas fa-angle-left"></i>
+                  </div>
+                  <ul class="form-menu-list dropdown-menu" id="exampleFormControlSelect1">
+                    <li><a class="dropdown-item" href="#"> Mouth of word (Friend, Refer..) </a></li>
+                    <li><a class="dropdown-item" href="#"> instagram </a></li>
+                    <li><a class="dropdown-item" href="#"> Facebook </a></li>
+                    <li><a class="dropdown-item" href="#"> Behance </a></li>
+                    <li><a class="dropdown-item" href="#"> Dribbble </a></li>
+                  </ul>
                   <div class="invalid-tooltip">
                       Please enter valid phone number.
                     </div>

@@ -765,5 +765,17 @@ $(document).ready(function(){
       // $('.loding-icon').css('display', 'none');
     }
    });
+
+
+
+
+// form drop-down menu
+$('.form-menu-list a').click(function(){
+  var secleted_value = $(this).text();
+  $('.form-menu>input').val(secleted_value);
+})
+
+
   
 })
+
