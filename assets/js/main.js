@@ -411,6 +411,13 @@ $(document).ready(function () {
 
 
   $("#form-btn").click(function () {
+
+    if($('.your-name').val() == ""){
+      $(".your-name").addClass('is-invalid');
+    }else{
+      $(".your-name").removeClass('is-invalid');
+    }
+
     var $email = $('form input[name="from_email'); //change form to id or containment selector
     var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
     if ($email.val() == '' || !re.test($email.val())) {
@@ -444,6 +451,7 @@ $(document).ready(function () {
     }
 
     $(".phone-number").removeClass('is-invalid');
+
 
   });
 
@@ -743,35 +751,36 @@ $('#project_content').on('slid.bs.carousel', function () {
 
 $(document).ready(function(){
 
-  $('.next_btn').click(function(){
-    $('.loding').css({"right": '0','visibility':'visible'});
-  })
-  $('.prev_btn').click(function(){
-    $('.loding').css({"right": '0','visibility':'visible'});
-  })
+  // $('.next_btn').click(function(){
+  //   $('.loding').css({"right": '0','visibility':'visible'});
+  // })
+  // $('.prev_btn').click(function(){
+  //   $('.loding').css({"right": '0','visibility':'visible'});
+  // })
 
-  $('.loding').css({"right": '0','visibility':'visible'});
+  // $('.loding').css({"right": '0','visibility':'visible'});
 
-  var image = new Image();
+  // var image = new Image();
   
   
-  $('.loding').on( 'transitionend', function() {
+  // $('.loding').on( 'transitionend', function() {
     
-    image.src = "projects/mockup-06.jpg";
+  //   image.src = "projects/mockup-06.jpg";
   
-    image.onload = function () {
-      //do something...
-      $('.loding').css({ "right": '100%','visibility':'hidden' });
-      // $('.loding-icon').css('display', 'none');
-    }
-   });
+  //   image.onload = function () {
+  //     //do something...
+  //     $('.loding').css({ "right": '100%','visibility':'hidden' });
+  //     // $('.loding-icon').css('display', 'none');
+  //   }
+  //  });
 
 
 
 
 // form drop-down menu
 $('.form-menu-list a').click(function(){
-  var secleted_value = $(this).text();
+  var trimStr = $(this).text();
+  var secleted_value = $.trim(trimStr);
   $('.form-menu>input').val(secleted_value);
 })
 

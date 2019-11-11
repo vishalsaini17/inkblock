@@ -148,7 +148,6 @@ ul {
     min-width: 80px;
     letter-spacing: 1px;
     border-width: 2px;
-    box-shadow: 0px 3px 10px #0000000F;
 }
 
 .btn-round {
@@ -467,9 +466,18 @@ a.nav-link:hover::before {
     padding-left: 4vw;
 } */
 
-.what-we-padding a{
-    letter-spacing: 0;
-    padding: 0.5vw 1.2vw;
+.my-btn{
+    letter-spacing: 1.2px;
+    padding: 0.7vw 1.6vw;
+    font-size: 0.625vw;
+    border: 1px solid #006FF9;
+    border-radius: initial;
+}
+
+.my-btn:hover{
+    color: #ffff !important;
+    text-decoration: none;
+    background-color: #006ff9;
 }
 
 .who-we-are {
@@ -478,10 +486,7 @@ a.nav-link:hover::before {
 }
 
 .who-we-are .btn {
-    border-radius: 19px;
     color: #006ff9;
-    box-shadow: 0px 4px 10px #077BFF2E;
-    background: linear-gradient(135deg, #0072FF73 -57%, rgba(255,255,255,1) 31%);
 }
 
 
@@ -876,13 +881,15 @@ a.nav-link:hover::before {
 
 .contact-form .form-control {
     background-color: #f5f5f5;
-    border-radius: 4.5px;
+    /* border-radius: 4.5px; */
     color: #39393f;
-    font-size: 13px;
-    font-weight: 300;
-    /* border: none; */
-    border: 1px solid #f5f5f5;
-    padding: 0.12vw 1vw;
+    font-size: 0.94vw;
+    border: none;
+    /* border: 1px solid #f5f5f5; */
+    padding: 0.6vw 1vw;
+    height: auto;
+    font-weight:400;
+    border-radius: inherit;
 }
 .contact-form textarea.form-control {
     -moz-padding-start: 0.5vw 1vw;
@@ -952,6 +959,11 @@ a.nav-link:hover::before {
     -moz-transition: all 0.1s ease-in;
     -ms-transition: all 0.1s ease-in;
     -o-transition: all 0.1s ease-in;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
 }
 
 .form-menu-list{
@@ -964,7 +976,11 @@ a.nav-link:hover::before {
     right: 5px !important;
     z-index: 1;
     min-width: auto;
-
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 .contact-form .form-control:focus .form-menu-list{
@@ -979,9 +995,10 @@ a.nav-link:hover::before {
 .form-menu-list a{
     color: #1F2024;
     text-decoration: none;
-    font-size: 0.79vw;
+    font-size: 0.94vw;
     display: block;
-    padding: 0.4vw 0.5vw;
+    padding: 0.4vw 1vw;
+    font-weight: 400;
 }
 
 .form-menu-list a:hover{
@@ -989,12 +1006,17 @@ a.nav-link:hover::before {
 }
 
 .form-group[aria-expanded="true"] .form-menu>i{
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
+
+.contact-form .form-group{
+    margin-bottom: 0.7vw;
+}
+
 
 /* footer */
 .main-footer {
@@ -1185,7 +1207,7 @@ a.nav-link:hover::before {
 }
 
 .team-box>div:hover {
-    background-color: rgb(227, 227, 227, 0.25);
+    background-color: rgba(227, 227, 227, 0.25);
 }
 
 .team-box>div:hover .round-img-box {
@@ -1333,6 +1355,17 @@ a.nav-link:hover::before {
     top: 52%;
 }
 
+.submit-btn{
+    color: #ffff !important;
+    text-decoration: none;
+    background-color: #006ff9;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
 /* footer */
 .footer-logo {
     max-width: 9vw;
@@ -1394,6 +1427,7 @@ section.project-detail {
     font-weight: 400;
     line-height: 1.21;
     font-size: 2.05vw;
+    font-family: HurmeGeometricSans3 !important;
 }
 
 .project-heading small::before {

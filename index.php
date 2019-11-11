@@ -43,7 +43,7 @@
               <div class="col-12 px-0">
                 <h3>Who we are...</h3>
                 <p><span> Ink Block Studio  </span>is an India based creative design agency built by experienced design enthusiasts with the main focus in helping you grow your brand.</p>
-                    <a href="about.php" class="btn btn-round btn-outline-light">Read more</a>
+                    <a href="about.php" class="btn my-btn">Read more</a>
               </div>
             </div>
           </div>
@@ -142,12 +142,12 @@
         <div class="row creativity align-items-center">
           <div class="col-12 col-md-5">
             <h4 class="say-hi">Say Hi!</h4>
-            <p class="contact-subtitle">We are always excited to hear a new idea!</p>
+            <p class="contact-subtitle m-0">We are always excited to hear a new idea!</p>
 
-            <form action="#" class="col-12 col-lg-10 px-0 pt-4" id="contact-form" name="myForm">
+            <form action="#" class="col-12 col-lg-11 px-0 pt-4" id="contact-form" name="myForm">
               <div class="form-row contact-form">
                 <div class="col-12 col-md-6 form-group">
-                  <input type="number" class="form-control" placeholder="Your Name">
+                  <input type="text" class="form-control your-name" placeholder="Name" name="your_name">
                   <div class="invalid-tooltip">
                       Enter Your name.
                     </div>
@@ -159,14 +159,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 form-group">
-                  <input type="number" class="form-control phone-number" placeholder="+00 000-0000-000" name="phone_no" id="phone_no" >
+                  <input type="number" class="form-control phone-number" placeholder="Phone" name="phone_no" id="phone_no" >
                   <div class="invalid-tooltip">
                       Please enter valid phone number.
                     </div>
                 </div>
                 <div class="col-12 col-md-6 form-group" data-toggle="dropdown">
                   <div class="d-flex form-menu">
-                  <input type="text" class="form-control" placeholder="How did you find us">
+                  <input type="text" autocomplete="off" class="form-control" placeholder="How did you find us" name="found_us">
                   <i class="fas fa-angle-left"></i>
                   </div>
                   <ul class="form-menu-list dropdown-menu" id="exampleFormControlSelect1">
@@ -176,16 +176,16 @@
                     <li><a class="dropdown-item" href="#"> Behance </a></li>
                     <li><a class="dropdown-item" href="#"> Dribbble </a></li>
                   </ul>
-                  <div class="invalid-tooltip">
+                  <!-- <div class="invalid-tooltip">
                       Please enter valid phone number.
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-12 form-group">
                   <textarea class="form-control" rows="6" cols="30" placeholder="Tell us something..."
                     name="message_html" required></textarea>
                 </div>
                 <div class="col-12 form-group contact-form-btn pt-2">
-                  <button class="btn btn-primary btn-round" id="form-btn">SUBMIT</button>
+                  <button class="btn submit-btn" id="form-btn">SUBMIT</button>
                 </div>
                 <div class="col-12 form-group contact-form-btn mt-4">
                   <a href="javascript:;">contact@inkblockstudio.com</a>
@@ -212,12 +212,12 @@
   </script>
 
 
-  <!-- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_fmcEgWCWJ9qx7Mfk8dCe6");
-    })();
-  </script> -->
+  <!-- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></!--> -->
+  <!-- <script type="text/javascript"> -->
+    <!-- (function () { -->
+      <!-- emailjs.init("user_fmcEgWCWJ9qx7Mfk8dCe6"); -->
+    <!-- })(); -->
+  <!-- </script> -->
 
 <script>
   $(".home-scroll").click(function () {
