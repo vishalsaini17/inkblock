@@ -682,6 +682,7 @@ if (localStorage.getItem("project_name") && localStorage.getItem("alise_name") &
         document.getElementById('prev_project').innerText = project_prev;
         current_index = current_index + 1;
         $(this).attr('data-index', current_index);
+        $(window).scrollTop(0);
         // current_index = next_index;
 
       });
@@ -715,6 +716,7 @@ if (localStorage.getItem("project_name") && localStorage.getItem("alise_name") &
         document.getElementById('prev_project').innerText = project_prev;
         current_index = current_index - 1;
         $(this).attr('data-index', current_index);
+        $(window).scrollTop(0);
 
       });
     }
@@ -774,7 +776,11 @@ $(document).ready(function(){
   //   }
   //  });
 
-
+  
+window.onload = function () { 
+    debugger
+    $('.loding').css('display','none'); 
+  };
 
 
 // form drop-down menu

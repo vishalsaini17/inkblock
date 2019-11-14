@@ -14,9 +14,6 @@
 
 <?php require "required/navbar.php" ?>
 
-<div class="loding text-center">
-     <img class='loding-icon' src="favicon.ico" alt="">
-</div>
 <div class="body-wrapper">
 
     <section class="section-hello " id="creative-section">

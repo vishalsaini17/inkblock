@@ -2,9 +2,6 @@
 <?php require "required/head-links.php" ?>
 <?php require "required/navbar.php" ?>
 
-<div class="loding text-center">
-    <img class='loding-icon' src="favicon.ico" alt="">
-</div>
 <div class="body-wrapper ">
     <section class="project-detail pb-0">
         <div class="my-container">
