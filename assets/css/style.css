@@ -1456,6 +1456,7 @@ section.project-detail {
     align-items: center;
     top: 100px;
     bottom: 0;
+    margin-top: 1vw;
 }
 .all-projects {
     padding-bottom: 10.72vw;
@@ -1477,7 +1478,7 @@ section.project-detail {
     text-transform: uppercase;
     font-weight: 800;
     padding-bottom: 3vw;
-    padding-top: 1.8vw;
+    padding-top: 0.8vw;
 }
 
 .all-projects-box a {
