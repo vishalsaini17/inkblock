@@ -1044,6 +1044,7 @@ a.nav-link:hover::before {
 .footer-logo-box {
     position: relative;
     display: inline-block;
+    width: 9.2vw;
 }
 
 
@@ -1369,7 +1370,7 @@ a.nav-link:hover::before {
 
 /* footer */
 .footer-logo {
-    max-width: 9vw;
+    /* max-width: 9vw; */
     /* -webkit-width: 9vw; */
     width: 100%;
     height: auto;
@@ -1381,7 +1382,7 @@ a.nav-link:hover::before {
     top: 0;
     left: 0;
     transition: all 0.3s ease-in-out;
-    max-width: 9vw;
+    /* max-width: 9vw; */
 }
 
 .footer-logo-box:hover .white-footer-logo {
@@ -1466,9 +1467,29 @@ section.project-detail {
     padding: 0vw 4vw;
 }
 
-.all-projects-box-border {
+/* .all-projects-box-border {
     border-left: 2px solid #EBEBEB;
     border-right: 2px solid #EBEBEB;
+} */
+
+.all-projects-box-border::after {
+    content: '';
+    border: 1px solid #EBEBEB;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: -3vw;
+    background-color: #EBEBEB;
+}
+
+.all-projects-box-border::before {
+    content: '';
+    border: 1px solid #EBEBEB;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: -3vw;
+    background-color: #EBEBEB;
 }
 
 .all-projects-box h4 {
