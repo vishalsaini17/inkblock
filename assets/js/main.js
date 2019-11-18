@@ -778,10 +778,12 @@ $(document).ready(function(){
 
   
 window.onload = function () { 
-    debugger
-    $('.loding').css('display','none'); 
+    $('.loading-wrapper').css('display','none'); 
   };
 
+// $('.projects-link').click(function(){
+//   $('.loading-wrapper').css('display','block');
+// })
 
 // form drop-down menu
 $('.form-menu-list a').click(function(){
