@@ -10,6 +10,24 @@ function smoothScroll(offsetVal = 0) {
 //   // var offset_top_creative = $('#creative-section').offset().top;
 // }
 
+$(window).on('load resize', function () {
+  
+  $('.loading-wrapper').css('display','none'); 
+
+  var url = window.location.href;
+  var res = url.split("#");
+  var next_id = "#" + res[1];
+  var project_height = $(next_id).height();
+  $(".cover").css("height", project_height);
+  if ($('.cover').length) {
+    setTimeout(function () { smoothScroll(); }, 1);
+  }
+});
+
+
+$(window).on('resize scroll', function () {
+
+});
 
 
 function amountscrolled() {
@@ -512,17 +530,6 @@ $(document).ready(function () {
 //   $(".cover").css("height",project_height);
 // }
 
-$(window).on('load resize', function () {
-  var url = window.location.href;
-  var res = url.split("#");
-  var next_id = "#" + res[1];
-  var project_height = $(next_id).height();
-  $(".cover").css("height", project_height);
-  if ($('.cover').length) {
-    setTimeout(function () { smoothScroll(); }, 1);
-  }
-});
-
 // project list hover
 $('.projects-link').hover(function () {
   $(this).parent().toggleClass('link-hover');
@@ -732,54 +739,8 @@ $('#project_content').on('slid.bs.carousel', function () {
   $('.prev-link').css("pointer-events", "inherit");
   $('.next-link').css("pointer-events", "inherit");
 })
-// page loading
-// $(document).ready(function() { 
-//   setTimeout(function(){ 
-//     $('#test>img').css('visibility','hidden');
-//     }, 100);
-//     $('#test').css('right',100 +'%');
-
-
-
-// }); 
-
-
-
-
-// $('.work-list li>a').on('click', function (e) {
-//   debugger
-//   // $('.loding').css({"transition": 'all 0.5s ease-in-out'});
-// });
 
 $(document).ready(function(){
-
-  // $('.next_btn').click(function(){
-  //   $('.loding').css({"right": '0','visibility':'visible'});
-  // })
-  // $('.prev_btn').click(function(){
-  //   $('.loding').css({"right": '0','visibility':'visible'});
-  // })
-
-  // $('.loding').css({"right": '0','visibility':'visible'});
-
-  // var image = new Image();
-  
-  
-  // $('.loding').on( 'transitionend', function() {
-    
-  //   image.src = "projects/mockup-06.jpg";
-  
-  //   image.onload = function () {
-  //     //do something...
-  //     $('.loding').css({ "right": '100%','visibility':'hidden' });
-  //     // $('.loding-icon').css('display', 'none');
-  //   }
-  //  });
-
-  
-window.onload = function () { 
-    $('.loading-wrapper').css('display','none'); 
-  };
 
 // $('.projects-link').click(function(){
 //   $('.loading-wrapper').css('display','block');
@@ -794,5 +755,4 @@ $('.form-menu-list a').click(function(){
 
 
   
-})
-
+});

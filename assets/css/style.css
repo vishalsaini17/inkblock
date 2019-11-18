@@ -1885,11 +1885,12 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .loading>span{
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 1em;
+    width: 1em;
     background: #006ff9;
     position: absolute;
     border-radius: 50%;
+    font-size: 1.45vw;
   }
   
   
