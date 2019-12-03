@@ -137,6 +137,14 @@ ul {
     margin-bottom: 0;
 }
 
+.mrl{
+    margin-left: 4.444vw !important;
+}
+
+.mrr{
+    margin-right: 4.444vw !important;
+}
+
 .btn {
     font-family: "HurmeGeometricSans3";
     text-transform: uppercase;

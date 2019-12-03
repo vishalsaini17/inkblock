@@ -12,7 +12,7 @@ function smoothScroll(offsetVal = 0) {
 
 $(window).on('load resize', function () {
   
-  $('.loading-wrapper').css('display','none'); 
+  // $('.loading-wrapper').css('display','none'); 
 
   var url = window.location.href;
   var res = url.split("#");
@@ -23,12 +23,6 @@ $(window).on('load resize', function () {
     setTimeout(function () { smoothScroll(); }, 1);
   }
 });
-
-
-$(window).on('resize scroll', function () {
-
-});
-
 
 function amountscrolled() {
   var scrollTop = $(window).scrollTop()

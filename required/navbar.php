@@ -21,21 +21,7 @@
 </nav>
 
 
-<!-- <div class="loding">
-  <div>
-      <img class='loding-icon d-block mb-3' src="favicon.ico" alt="">
-      <div class="spinner-grow" style="width: 1.5rem; height: 1.5rem;" role="status">
-          <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow" style="width: 1.5rem; height: 1.5rem;animation-delay: 0.6s;" role="status">
-          <span class="sr-only">Loading...</span>
-      </div>
-      <div class="spinner-grow" style="width: 1.5rem; height: 1.5rem;animation-delay: 1.2s;" role="status">
-          <span class="sr-only">Loading...</span>
-      </div>
-  </div>
-</div> -->
-<div class="loading-wrapper">
+<!-- <div class="loading-wrapper">
   <div class="loading-card">
     <img class='loding-icon d-block mb-3' src="favicon.ico" alt="">
     <div class="loading mt-5 ml-5">
@@ -44,4 +30,4 @@
       <span class="span-3"></span>
     </div>
   </div>
-</div>
+</div> -->
