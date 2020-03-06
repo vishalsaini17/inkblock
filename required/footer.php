@@ -8,10 +8,10 @@
               <img src="assets/img/logo-white.svg" alt="inkBlock" class="white-footer-logo">
             </a>
           </div>
-          <div class="col text-right footer-text">
+          <div class="col text-sm-right footer-text">
             <h5>Contact</h5>
             <div class="contact-footer">contact@inkblockstudio.com</div>
-            <div class="text-muted">(+91) 96 4388 4399 / 888 2424 955 / 798 201 5334</div>
+            <div class="text-muted">(+91) 8861 3333 62 / 888 2424 955 / 798 201 5334</div>
             <div class="text-muted">Gurugram, Haryana, India - 122001</div>
           </div>
         </div>

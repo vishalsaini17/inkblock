@@ -7,8 +7,8 @@
         <div class="my-container">
             <div class="row">
                 <div class="col-12 mb-5">
-                    <div class="row align-items-center project-btn">
-                        <div class='col-auto pb-4'>
+                    <div class="row align-items-sm-center project-btn">
+                        <div class='col-6 col-sm-auto pb-4'>
                             <a href="#project_content" class="prev-link prev_btn" role="button" data-slide="prev"
                                 data-index=""><i class="fas fa-caret-left pr-2"></i>PREV</a>
                         </div>
@@ -16,7 +16,7 @@
                             <span id="project_name"></span>
                             <small id="alise_name"></small>
                         </div>
-                        <div class='col-auto pb-4'>
+                        <div class='col-6 col-sm-auto pb-4 text-right text-sm-left'>
                             <a href="#project_content" class="next-link next_btn" role="button" data-slide="next"
                                 data-index="">NEXT<i class="fas fa-caret-right pl-2"></i></a>
                         </div>
@@ -64,20 +64,20 @@
     <section class="all-projects">
         <div class="container-fluid">
             <div class="row justify-content-center all-projects-box align-items-center">
-                <div class="col-lg-4 col-md-4 pb-3 text-center ">
+                <div class="col-lg-4 col-md-4 pb-3 text-sm-center ">
                     <h4>Prev</h4>
                     <div class="text-poistion">
                         <a id="prev_project" class="prev-link prev_btn" href="#project_content" role="button"
                             data-slide="prev" data-index=""></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 pb-3 text-center all-projects-box-border">
+                <div class="col-lg-4 col-md-4 pb-3 text-sm-center all-projects-box-border">
                     <h4>Return to</h4>
                     <div class="text-poistion">
                         <a href="index.php#work">All projects</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 pb-3 text-center">
+                <div class="col-lg-4 col-md-4 pb-3 text-sm-center">
                     <h4>Next</h4>
                     <div class="text-poistion">
                         <a id="next_project" class="next-link next_btn" href="#project_content" role="button"

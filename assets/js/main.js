@@ -113,7 +113,7 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     var scrollVal = $(window).scrollTop();
     var x = -(scrollVal - scrollVal / 2) + 'px';
-    $('.banner-section').css({ 'background-position-y': 'calc(80px + ' + x + ')' });
+    $('.banner-section').css({ 'background-position-y': 'calc(100px + ' + x + ')' });
   })
 
   // indicator offset
@@ -748,5 +748,24 @@ $('.form-menu-list a').click(function(){
 })
 
 
-  
+// reponsive
+
+ $('.nav-menu>img').click(function(){
+  $('.nav-menu>img+ul').addClass('menu-toggle'); 
+  $('.section-hello').css("transform","translateY(-800px)");
+ });
+ 
+ $('.mobile-menu-icon').click(function(){
+  $('.nav-menu>img+ul').removeClass('menu-toggle'); 
+  $('.section-hello').css("transform","translateY(0px)");
+ });
+
+ $('.nav-menu .nav a').click(function(){
+  $('.nav-menu>img+ul').removeClass('menu-toggle'); 
+  $('.section-hello').css("transform","translateY(0px)");
+ });
+
+
+
+
 });
