@@ -2210,9 +2210,13 @@ input[type=number] {
         font-size: 12px;
         margin-top: 28px;
     }
+    
+     .who-we-are .blue-logo {
+        display: none;
+    }
 
     /* how-we-help */
-    .who-we-are .blue-logo {
+    /* .who-we-are .blue-logo {
         display: none;
     }
 
@@ -2276,10 +2280,10 @@ input[type=number] {
 
     .wwd-section {
         padding-bottom: 170px;
-    }
+    } */
 
     /* work */
-    .work-wrapper {
+    /* .work-wrapper {
         display: block;
     }
 
@@ -2322,12 +2326,9 @@ input[type=number] {
         width: 311px;
         height: 203px;
         position: relative;
-        /* background-color: #fff;
-        opacity: 0.3; */
     }
 
     .work-item__image {
-        /* position: static; */
         width: 311px;
         height: 203px;
     }
@@ -2338,7 +2339,7 @@ input[type=number] {
 
     .work-section>.container-fluid {
         padding-right: 0;
-    }
+    } */
 
     /* contact-form */
 
@@ -2395,6 +2396,7 @@ input[type=number] {
     .footer-text {
         padding-top: 30px;
         padding-bottom: 30px;
+        margin-top: 30px;
     }
 
     .footer-text>div {
@@ -2627,6 +2629,80 @@ input[type=number] {
     .all-projects{
         padding-top: 0;
     }
+
+    /* help.php */
+
+    /* .do-name-links{
+        font-size: 14px;
+        padding-top: 0;
+        margin-bottom: 18px;
+    }
+
+    .do-name-same-links{
+        font-size: 18px;
+    }
+    .do-name h5{
+        font-size: 24px;
+    }
+    .do-name h3{
+        font-size: 60px;
+    }
+
+    .side-menus{
+        position: absolute;
+        left: -63px;
+    }
+
+    .do-box-content h4{
+        font-size: 18px;
+    }
+
+    .do-box-content p{
+        font-size: 12px;
+        max-width: 80%;
+    }
+
+    .do-list-box h3{
+        font-size: 24px;
+    }
+
+    .do-list-box{
+        padding-top: 0;
+    }
+
+    .do-name-box{
+        padding-bottom: 0;
+    }
+
+    .do-list-box li{
+        font-size: 18px;
+        padding-left: 28px;
+    }
+
+
+    .do-list-box li::before{
+        width: 10px;
+        height: 10px;
+    }
+
+    .do-list-box li::after{
+        width: 2px;
+        height: 100%;
+        top: 14px;
+        left: 3.3%;
+    }
+
+    .do-section .container-fluid{
+        padding: 0;
+    }
+    
+    .do-section .container-fluid>.row{
+        margin-right: 0;
+    }
+
+ */
+
+
 
 
 

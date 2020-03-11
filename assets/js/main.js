@@ -570,20 +570,17 @@ if (localStorage.getItem("current_help_index")) {
 
 var hashvalue=location.hash;
 if(hashvalue == '#design'){
-  debugger
 $('.do-part[data-index=0]').addClass('block');
 $('.do-part[data-index=1]').removeClass('block');
 $('.do-part[data-index=2]').removeClass('block');
 }
 else if(hashvalue == '#brand'){
-  debugger
 $('.do-part[data-index=1]').addClass('block');
 $('.do-part[data-index=0]').removeClass('block');
 $('.do-part[data-index=2]').removeClass('block');
 }
 
 else if(hashvalue == '#digital'){
-  debugger
 $('.do-part[data-index=2]').addClass('block');
 $('.do-part[data-index=1]').removeClass('block');
 $('.do-part[data-index=0]').removeClass('block');

@@ -6,9 +6,9 @@
       <section class="do-section do-part" data-index='0'>
          <div class="container-fluid">
             <div class="row justify-content-end">
-               <div class="col-lg-5 col-md-5 col-sm-5 col-5 do-name-box">
+               <div class="col-lg-5 col-md-5 col-sm-5 col-10 do-name-box">
                   <div class="row sticky-part">
-                     <div class="col-lg-2  col-md-2 col-sm-2 col-2">
+                     <div class="col-lg-2  col-md-2 col-sm-2 col-2 side-menus">
                         <div class="row">
                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
                               <a class="do-name-links text-decoration-none do-name-bl-color do-name-same-links design-current" hash='help.php#design' href="help.php">UI/UX Design</a>
@@ -31,7 +31,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-7 col-md-7 col-sm-7 col-7   do-box">
+               <div class="col-lg-7 col-md-7 col-sm-7 col-10   do-box">
                   <div class="row">
                      <div class="col-lg-12  col-md-12 col-sm-12 col-12 do-box-content">
                         <h4>
@@ -61,10 +61,10 @@
       <!-- ------------------------------------------------- -->
       <section class="do-section do-part" data-index="1">
         <div class="container-fluid">
-           <div class="row justify-content-center">
-              <div class="col-lg-5 col-md-5 col-sm-5 col-5 do-name-box">
+           <div class="row justify-content-end">
+              <div class="col-lg-5 col-md-5 col-sm-5 col-10 do-name-box">
                  <div class="row sticky-part">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 side-menus">
                       <div class="row">
                          <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
                             <a class="do-name-links text-decoration-none do-name-bl-link-hover design-current" hash='design' href="help.php#design">UI/UX Design</a>
@@ -87,7 +87,7 @@
                     </div>
                  </div>
               </div>
-              <div class="col-lg-7 col-md-7 col-sm-7 col-7  do-box" >
+              <div class="col-lg-7 col-md-7 col-sm-7 col-10  do-box" >
                  <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 do-box-content">
                        <h4>
@@ -118,9 +118,9 @@
      <section class="do-section do-part" data-index="2">
       <div class="container-fluid">
          <div class="row justify-content-end">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-5 do-name-box">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-10 do-name-box">
                <div class="row sticky-part">
-                  <div class="col-lg-2  col-md-2 col-sm-2 col-2">
+                  <div class="col-lg-2  col-md-2 col-sm-2 col-2 side-menus">
                      <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
                            <a class="do-name-links text-decoration-none  do-name-bl-link-hover design-current" hash='design' href="help.php#design">UI/UX Design</a>
@@ -143,7 +143,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-7 col-7   do-box">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-10   do-box">
                <div class="row">
                   <div class="col-lg-12  col-md-12 col-sm-12 col-12 do-box-content">
                      <h4>
